@@ -2,14 +2,364 @@
 <html lang="en">
   <meta charset="UTF-8">
   <title>Page Title</title>
-  
+  <head>
+
+    
+    <link rel="stylesheet" href="css/style.css">
+  </head>
   <body>
 
-    <h1>I am the solution to HW1!</h1>
+    <nav>
+      <div id = "nav-left">
 
-    <p>
-        And I can link to <a href="./otherpage.html">other pages.</a>
-    </p>
+        <img src="../assets/logo/logo-01.svg" alt="Bun Bun bake shop" id="logo">
+      </div>
+
+
+      <div id = "nav-right">
+
+        <div class = "nav-top">
+          <div class = "nav-items"> 
+            <p class="nav-item highlight">PRODUCT</p>
+            <p class="nav-item">CART</p>
+          </div>
+          
+        </div>
+
+
+        <div class="strip"></div>
+
+        <div class="nav-bottom">
+          <p class="website-title">Our hand-made cinnamon rolls</p>
+        </div>
+        
+      </div>
+    </nav>
+
+    <main>
+      <div class = "shop-row">
+        <div class = "shop-item">
+
+          <img src="../assets/products/original-cinnamon-roll.jpg" alt="original cinnamon roll" class = "item-img">
+          <p class="item-name"><b>Original cinnamon roll</b></p>
+          <div class = "buttons">
+
+          
+            <div class = "selector">
+            
+              <label class="selector-title">Glazing:</label>
+
+              <select name="glazing-options" class="glaze-selector">
+                <option value="original">Keep original</option>
+                <option value="sugar-milk">Sugar milk</option>
+                <option value="vanilla-milk">Vanilla milk</option>
+                <option value="double-chocolate">Double chocolate</option>
+              </select>
+            </div>
+
+            <div class="selector">
+              
+              <label class="selector-title">Pack size:</label>
+              
+              <div class="selector-buttons">
+
+                <label class="selector-button">
+                  <input type="radio" id= "btn-1-original" name="pack-size-original" value="1" checked class = "radio-btn"/>
+                  <label for="btn-1-original">1</label>
+                </label>
+                <label class="selector-button">
+                  <input type="radio" id= "btn-2-original" name="pack-size-original" value="3" class = "radio-btn"/>
+                  <label for="btn-2-original">3</label>
+                </label>
+                
+                <label class="selector-button">
+                  <input type="radio" id= "btn-3-original" name="pack-size-original" value="6" class = "radio-btn"/>
+                  <label for="btn-3-original">6</label>
+                </label>
+                <label class="selector-button">
+                  <input type="radio" id= "btn-4-original" name="pack-size-original" value="9" class = "radio-btn"/>
+                  <label for="btn-4-original">12</label>
+                </label>
+              </div>
+            </div> 
+          </div>
+          <div class="selector">
+            <p class="price-tag">$ 2.56</p>
+            
+            <button class="add-button">Add to Cart</button>
+            
+          </div>
+
+        </div>
+        <div class = "shop-item">
+
+          <img src="../assets/products/apple-cinnamon-roll.jpg" alt="original cinnamon roll" class = "item-img">
+          <p class="item-name"><b>Apple cinnamon roll</b></p>
+          <div class = "buttons">
+
+          
+            <div class = "selector">
+            
+              <label class="selector-title">Glazing:</label>
+
+              <select name="glazing-options" class="glaze-selector">
+                <option value="original">Keep original</option>
+                <option value="sugar-milk">Sugar milk</option>
+                <option value="vanilla-milk">Vanilla milk</option>
+                <option value="double-chocolate">Double chocolate</option>
+              </select>
+            </div>
+
+            <div class="selector">
+              
+              <label class="selector-title">Pack size:</label>
+              
+              <div class="selector-buttons">
+
+                <label class="selector-button">
+                  <input type="radio" id= "btn-1-apple" name="pack-size-apple" value="1" checked class = "radio-btn"/>
+                  <label for="btn-1-apple">1</label>
+                </label>
+                <label class="selector-button">
+                  <input type="radio" id= "btn-2-apple" name="pack-size-apple" value="3" class = "radio-btn"/>
+                  <label for="btn-2-apple">3</label>
+                </label>
+                
+                <label class="selector-button">
+                  <input type="radio" id= "btn-3-apple" name="pack-size-apple" value="6" class = "radio-btn"/>
+                  <label for="btn-3-apple">6</label>
+                </label>
+                <label class="selector-button">
+                  <input type="radio" id= "btn-4-apple" name="pack-size-apple" value="9" class = "radio-btn"/>
+                  <label for="btn-4-apple">12</label>
+                </label>
+              </div>
+            </div> 
+          </div>
+          <div class="selector">
+            <p class="price-tag">$ 2.56</p>
+            
+            <button class="add-button">Add to Cart</button>
+            
+          </div>
+
+        </div>
+        <div class = "shop-item">
+
+          <img src="../assets/products/raisin-cinnamon-roll.jpg" alt="original cinnamon roll" class = "item-img">
+          <p class="item-name"><b>Raisin cinnamon roll</b></p>
+          <div class = "buttons">
+
+          
+            <div class = "selector">
+            
+              <label class="selector-title">Glazing:</label>
+
+              <select name="glazing-options" class="glaze-selector">
+                <option value="original">Keep original</option>
+                <option value="sugar-milk">Sugar milk</option>
+                <option value="vanilla-milk">Vanilla milk</option>
+                <option value="double-chocolate">Double chocolate</option>
+              </select>
+            </div>
+
+            <div class="selector">
+              
+              <label class="selector-title">Pack size:</label>
+              
+              <div class="selector-buttons">
+
+                <label class="selector-button">
+                  <input type="radio" id= "btn-1-raisin" name="pack-size-raisin" value="1" checked class = "radio-btn"/>
+                  <label for="btn-1-raisin">1</label>
+                </label>
+                <label class="selector-button">
+                  <input type="radio" id= "btn-2-raisin" name="pack-size-raisin" value="3" class = "radio-btn"/>
+                  <label for="btn-2-raisin">3</label>
+                </label>
+                
+                <label class="selector-button">
+                  <input type="radio" id= "btn-3-raisin" name="pack-size-raisin" value="6" class = "radio-btn"/>
+                  <label for="btn-3-raisin">6</label>
+                </label>
+                <label class="selector-button">
+                  <input type="radio" id= "btn-4-raisin" name="pack-size-raisin" value="9" class = "radio-btn"/>
+                  <label for="btn-4-raisin">12</label>
+                </label>
+              </div>
+            </div> 
+          </div>
+          <div class="selector">
+            <p class="price-tag">$ 2.56</p>
+            
+            <button class="add-button">Add to Cart</button>
+            
+          </div>
+
+        </div>
+      </div>
+      <div class = "shop-row">
+        <div class = "shop-item">
+
+          <img src="../assets/products/walnut-cinnamon-roll.jpg" alt="original cinnamon roll" class = "item-img">
+          <p class="item-name"><b>Walnut cinnamon roll</b></p>
+          <div class = "buttons">
+
+          
+            <div class = "selector">
+            
+              <label class="selector-title">Glazing:</label>
+
+              <select name="glazing-options" class="glaze-selector">
+                <option value="original">Keep original</option>
+                <option value="sugar-milk">Sugar milk</option>
+                <option value="vanilla-milk">Vanilla milk</option>
+                <option value="double-chocolate">Double chocolate</option>
+              </select>
+            </div>
+
+            <div class="selector">
+              
+              <label class="selector-title">Pack size:</label>
+              
+              <div class="selector-buttons">
+
+                <label class="selector-button">
+                  <input type="radio" id= "btn-1-walnut" name="pack-size-walnut" value="1" checked class = "radio-btn"/>
+                  <label for="btn-1-walnut">1</label>
+                </label>
+                <label class="selector-button">
+                  <input type="radio" id= "btn-2-walnut" name="pack-size-walnut" value="3" class = "radio-btn"/>
+                  <label for="btn-2-walnut">3</label>
+                </label>
+                
+                <label class="selector-button">
+                  <input type="radio" id= "btn-3-walnut" name="pack-size-walnut" value="6" class = "radio-btn"/>
+                  <label for="btn-3-walnut">6</label>
+                </label>
+                <label class="selector-button">
+                  <input type="radio" id= "btn-4-walnut" name="pack-size-walnut" value="9" class = "radio-btn"/>
+                  <label for="btn-4-walnut">12</label>
+                </label>
+              </div>
+            </div> 
+          </div>
+          <div class="selector">
+            <p class="price-tag">$ 2.56</p>
+            
+            <button class="add-button">Add to Cart</button>
+            
+          </div>
+
+        </div>
+        <div class = "shop-item">
+
+          <img src="../assets/products/double-chocolate-cinnamon-roll.jpg" alt="original cinnamon roll" class = "item-img">
+          <p class="item-name"><b>Double-chocolate cinnamon roll</b></p>
+          <div class = "buttons">
+
+          
+            <div class = "selector">
+            
+              <label class="selector-title">Glazing:</label>
+
+              <select name="glazing-options" class="glaze-selector">
+                <option value="original">Keep original</option>
+                <option value="sugar-milk">Sugar milk</option>
+                <option value="vanilla-milk">Vanilla milk</option>
+                <option value="double-chocolate">Double chocolate</option>
+              </select>
+            </div>
+
+            <div class="selector">
+              
+              <label class="selector-title">Pack size:</label>
+              
+              <div class="selector-buttons">
+
+                <label class="selector-button">
+                  <input type="radio" id= "btn-1-double-chocolate" name="pack-size-double-chocolate" value="1" checked class = "radio-btn"/>
+                  <label for="btn-1-double-chocolate">1</label>
+                </label>
+                <label class="selector-button">
+                  <input type="radio" id= "btn-2-double-chocolate" name="pack-size-double-chocolate" value="3" class = "radio-btn"/>
+                  <label for="btn-2-double-chocolate">3</label>
+                </label>
+                
+                <label class="selector-button">
+                  <input type="radio" id= "btn-3-double-chocolate" name="pack-size-double-chocolate" value="6" class = "radio-btn"/>
+                  <label for="btn-3-double-chocolate">6</label>
+                </label>
+                <label class="selector-button">
+                  <input type="radio" id= "btn-4-double-chocolate" name="pack-size-double-chocolate" value="9" class = "radio-btn"/>
+                  <label for="btn-4-double-chocolate">12</label>
+                </label>
+              </div>
+            </div> 
+          </div>
+          <div class="selector">
+            <p class="price-tag">$ 2.56</p>
+            
+            <button class="add-button">Add to Cart</button>
+            
+          </div>
+
+        </div>
+        <div class = "shop-item">
+
+          <img src="../assets/products/strawberry-cinnamon-roll.jpg" alt="original cinnamon roll" class = "item-img">
+          <p class="item-name"><b>Strawberry cinnamon roll</b></p>
+          <div class = "buttons">
+
+          
+            <div class = "selector">
+            
+              <label class="selector-title">Glazing:</label>
+
+              <select name="glazing-options" class="glaze-selector">
+                <option value="original">Keep original</option>
+                <option value="sugar-milk">Sugar milk</option>
+                <option value="vanilla-milk">Vanilla milk</option>
+                <option value="double-chocolate">Double chocolate</option>
+              </select>
+            </div>
+
+            <div class="selector">
+              
+              <label class="selector-title">Pack size:</label>
+              
+              <div class="selector-buttons">
+
+                <label class="selector-button">
+                  <input type="radio" id= "btn-1-strawberry" name="pack-size-strawberry" value="1" checked class = "radio-btn"/>
+                  <label for="btn-1-strawberry">1</label>
+                </label>
+                <label class="selector-button">
+                  <input type="radio" id= "btn-2-strawberry" name="pack-size-strawberry" value="3" class = "radio-btn"/>
+                  <label for="btn-2-strawberry">3</label>
+                </label>
+                
+                <label class="selector-button">
+                  <input type="radio" id= "btn-3-strawberry" name="pack-size-strawberry" value="6" class = "radio-btn"/>
+                  <label for="btn-3-strawberry">6</label>
+                </label>
+                <label class="selector-button">
+                  <input type="radio" id= "btn-4-strawberry" name="pack-size-strawberry" value="9" class = "radio-btn"/>
+                  <label for="btn-4-strawberry">12</label>
+                </label>
+              </div>
+            </div> 
+          </div>
+          <div class="selector">
+            <p class="price-tag">$ 2.56</p>
+            
+            <button class="add-button">Add to Cart</button>
+            
+          </div>
+
+        </div>
+      </div>
+    </main>
 
   </body>
 </html>
