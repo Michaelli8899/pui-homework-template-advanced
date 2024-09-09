@@ -50,9 +50,10 @@ main{
     font-size: 24px;
 }
 
-.highlight{
+.highlight:hover{
     background-color: #ffff3f;
     font-weight: bold;
+    cursor: pointer;
 }
 
 
@@ -178,14 +179,14 @@ main{
 .selector-button label{
     position: relative;
     top: -95%;
-    width: 35px;
-    height: 35px;
-    margin: 0px 8px;
     font-size: 14px;
+    display: block;
+    text-align: center;
+    margin-top: 2px;
 }
 
 input[type="radio"]{
-    margin: 0 0;
+    margin: 0;
     appearance: none;
     background-color: #ffffff;
     width: 100%;
@@ -194,12 +195,13 @@ input[type="radio"]{
 }
 
 input[type='radio']:checked {
-    margin: 0 0;
+    margin: 0;
 
     background: #969696;
     width: 100%;
     height: 100%;
 }
+
 #logo{
     margin-top: 20px;
 }
