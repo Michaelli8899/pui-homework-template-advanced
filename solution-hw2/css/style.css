@@ -3,6 +3,7 @@
     margin: 5px;
 }
 
+/* cart flashes when add object */
 #cart-flash{
     display:none;
     top: 80px;
