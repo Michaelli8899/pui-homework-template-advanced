@@ -1,16 +1,16 @@
 {
   "files": {
     "main.css": "/pui-homework-template-advanced/solution-hw3/static/css/main.82cf6e30.css",
-    "main.js": "/pui-homework-template-advanced/solution-hw3/static/js/main.e3db32fc.js",
+    "main.js": "/pui-homework-template-advanced/solution-hw3/static/js/main.1aa96bb4.js",
     "static/js/453.bfe7e960.chunk.js": "/pui-homework-template-advanced/solution-hw3/static/js/453.bfe7e960.chunk.js",
     "static/media/logo.svg": "/pui-homework-template-advanced/solution-hw3/static/media/logo.6ce24c58023cc2f8fd88fe9d219db6c6.svg",
     "index.html": "/pui-homework-template-advanced/solution-hw3/index.html",
     "main.82cf6e30.css.map": "/pui-homework-template-advanced/solution-hw3/static/css/main.82cf6e30.css.map",
-    "main.e3db32fc.js.map": "/pui-homework-template-advanced/solution-hw3/static/js/main.e3db32fc.js.map",
+    "main.1aa96bb4.js.map": "/pui-homework-template-advanced/solution-hw3/static/js/main.1aa96bb4.js.map",
     "453.bfe7e960.chunk.js.map": "/pui-homework-template-advanced/solution-hw3/static/js/453.bfe7e960.chunk.js.map"
   },
   "entrypoints": [
     "static/css/main.82cf6e30.css",
-    "static/js/main.e3db32fc.js"
+    "static/js/main.1aa96bb4.js"
   ]
 }
