@@ -1,6 +1,6 @@
 import React, { Component } from 'react';
 
-
+// constants across all shop items
 const original = {option: 'Keep original', 
   price: 0, key: 'keep-original'};
 const sugarMilk = {option: 'Sugar milk', 
@@ -12,13 +12,8 @@ const doubleChoco = {option: 'Double chocolate',
 
 const glazingOptions = [original, sugarMilk, vanillaMilk, doubleChoco];
 
-
+//singular radio button
 class RadioBtn extends Component {
-  constructor(props){
-    super(props);
-
-    // console.log(props);
-  }
 
   render(){
     
@@ -37,10 +32,8 @@ class RadioBtn extends Component {
   }
 }
 
+// radio buttons in a group of 4 for pack size
 class RadioBtnGroup extends Component {
-  constructor(props){
-    super(props);
-  }
 
   render(){
     return (
@@ -48,6 +41,7 @@ class RadioBtnGroup extends Component {
         
         <label className = 'selector-title'>Pack size:</label>
         <div className = 'selector-buttons'>
+          {/* look through all passed in radioButton Objects */}
           {this.props.btnObject.map((btn) => {
             return (
               <RadioBtn id = {btn.id} 
@@ -63,20 +57,17 @@ class RadioBtnGroup extends Component {
   }
 }
 
+// drop down menu for glazing
 class DropDown extends Component {
-  constructor(props){
-    super(props);
-    this.options = props.options;
-  }
   
   render(){
     return (
       <div className = 'selector'>
         <label className = 'selector-title'>Glazing:</label>
         <select name = 'glazing-options' 
-                className = 'glaze-selector'
-                onChange = {this.glazingChang}>
-          {this.options.map((option, index) => {
+                className = 'glaze-selector'>
+          {/* add in all glazing options */}
+          {this.props.options.map((option) => {
             return (
               <option 
                       value = {option.price}
@@ -91,6 +82,7 @@ class DropDown extends Component {
   }
 }
 
+//main component for each shop item
 class ShopItem extends Component /*= (imageURL, altText, itemName) =>*/ {
   constructor(props){
     super(props);
@@ -105,33 +97,27 @@ class ShopItem extends Component /*= (imageURL, altText, itemName) =>*/ {
     
     this.radioBtnObjects = []
     this.createRadioObject();
-
-    // console.log('//////////////////////////////////')
-    // console.log(this.radioBtnObjects);
-
-  }
-
-  glazingChange() {
-    // this.glazing = this.selection.options[this.selection.selectedIndex].text;
-    // this.priceChange = this.selection.value;
-    // this.price = (this.defaultPrice + parseFloat(this.priceChange)) * this.packSize;
-    // this.updateItem();
-    this.price = '10';
-    console.log('Change glazing');
   }
 
   // In constructor
+  // initialize the values for each radioBtn Object and push into an Array (this.radioBtnObjects)
   createRadioObject(){
+    //retreive the first-word of the altText
     let suffix = this.altText.split(' ')[0]
-
+    
+    //initialize the name of the btn to ensure grouping
     let radioBtnName =  `pack-size-${suffix}`;
     let radioBtnId = [];
+    //initialize id by adding suffix to the end
     for (let i = 1; i <= 4; i++){
       radioBtnId.push(`btn-${i}-${suffix}`);
     }
+    //initialize the initial check value for each button
     let radioBtnChecked = [true, false, false, false];
+    //initialize each value
     let radioBtnValue = ['1', '3', '6', '12'];
     
+    //create each radioBtn Object and push to the Array
     for (let i = 0; i < 4; i++){
       let radioBtn = new Object();
       radioBtn.id = radioBtnId[i];
@@ -143,7 +129,6 @@ class ShopItem extends Component /*= (imageURL, altText, itemName) =>*/ {
   }
 
   render(){
-    console.log(this.props.imageUrl);
     return (
     <div className = 'shop-item'>
       <img src = {this.props.imageUrl}
@@ -153,8 +138,8 @@ class ShopItem extends Component /*= (imageURL, altText, itemName) =>*/ {
       <p className = 'item-name'><b>{this.itemName}</b></p>   
 
       <div className = 'buttons'>
-        <DropDown options = {glazingOptions}
-                  glazingChang = {this.glazingChange}/>
+        {/* input all glazingOptions from public const variable */}
+        <DropDown options = {glazingOptions}/>
 
         <RadioBtnGroup btnObject = {this.radioBtnObjects}/>
       </div>

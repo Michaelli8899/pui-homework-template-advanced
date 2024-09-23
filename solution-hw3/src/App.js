@@ -5,6 +5,7 @@ import Index from './views/home/index.js';
 function App() {
   return (
     <div className="App">
+      {/* renders the entire React component Index */}
       <Index />
     </div>
   );

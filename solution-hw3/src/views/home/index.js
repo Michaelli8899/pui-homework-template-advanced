@@ -8,10 +8,12 @@ function Index () {
   return (
     <div>
       <div>
+        {/* navigaiton bar */}
         <NavBar  imageUrl = {`${process.env.PUBLIC_URL}/assets/logo/logo-01.svg`}/>
       </div>
       <body>
         <main>
+          {/* renders ShopItem Component */}
           <div className = "shop-row">
             <ShopItem   imageUrl = {`${process.env.PUBLIC_URL}/assets/products/original-cinnamon-roll.jpg`}
                         altText = 'original cinnamon roll'
