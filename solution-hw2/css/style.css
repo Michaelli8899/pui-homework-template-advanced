@@ -91,7 +91,7 @@ nav{
 
 .nav-bottom{
     flex-grow: 1;
-    /* background-color: #ffcdcd; */
+   
     display: flex;
     flex-direction: row;
     align-items: flex-end;
