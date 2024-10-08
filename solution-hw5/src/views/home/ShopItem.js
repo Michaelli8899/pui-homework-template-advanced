@@ -221,10 +221,10 @@ class ShopItem extends Component {
           price: parseFloat(this.props.price),
           imageURL: this.props.imageUrl,
           packSizePriceChange: 1,
-          glazingPriceChange: 0,
+          glazingPriceChange: prevState.glazingChange ? prevState.glazingPriceChange : 0,
           typeName: this.props.itemName,
           radioBtnChecked: prevState.radioBtnChecked,
-          glazingName: 'Keep original',
+          glazingName: prevState.glazingName == 'underfined' ? 'Keep original' : prevState.glazingName,
           radioBtnObjects: [...radiobtnObjects].map((btn, idx) => {
             console.log(btn);
             btn.checked = idx === 0 ? true : false;
