@@ -214,7 +214,7 @@ class ShopItem extends Component {
   componentDidUpdate(prevProps) {
     if(typeof prevProps !== 'undefined' && typeof this.props !== 'undefined'){
       if(this.props.itemName != prevProps.itemName){
-        let radiobtnObjects = [...this.state.radioBtnObjects];
+        let radiobtnObjects = this.createRadioObject()
         let resetDropdown = this.createDropDownOptions();
         this.setState((prevState) => ({
           defaultPrice: parseFloat(this.props.price),
