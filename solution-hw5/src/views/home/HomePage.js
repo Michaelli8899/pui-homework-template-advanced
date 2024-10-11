@@ -172,9 +172,6 @@ class HomePage extends Component {
             
             return itemName.includes(searchTerm);
         });
-
-
-
         const newRow = [...row].sort((a, b) => {
             if(this.state.sortTerm === 'price'){
                 if(parseFloat(a.price) === parseFloat(b.price)){
@@ -209,17 +206,6 @@ class HomePage extends Component {
                 })}
             </div>
         )
-
-        const cart = this.state.showCart ? (
-            <div>
-                <Cart   cartItems = {this.state.cart}
-                        handleRemove = {this.handleRemove}/>
-            </div>
-        ) : (
-            <div>
-
-            </div>
-        )
     
         return (
             <div>
@@ -233,7 +219,11 @@ class HomePage extends Component {
                 <SearchBar  handleSearch = {this.handleSearch}
                             handleSort = {this.handleSort}/>
             
-                {cart}
+                {this.state.showCart && 
+                <Cart   cartItems = {this.state.cart}
+                        handleRemove = {this.handleRemove}/>
+                
+                }
 
                 <body>
                     <main>   
