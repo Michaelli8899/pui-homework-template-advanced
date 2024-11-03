@@ -48,15 +48,19 @@ Overall, the feedback on the page structure and overall design was positive, whi
 **Week 1**
 - Developing the basic structure of the website using HTML and CSS.
 - Finish both homepages and start looking into relevant JavaScript (JS) libraries for animations and user interactions (GSAP or ScrollMagic).
+
 **Week 2**
 - Implement the History Page with content to highlight character evolution when scrolling.
 - Create a template for how the history page can be implemented.
+
 **Week 3**
 Finish implementing the history page and start on the individual strokes page.
 Create the stroke animations for each stroke.
+
 **Week 4**
 - Build a template for all strokes.
 - Finish implementing the strokes page.
+
 **JS Libraries and Components**
 - GSAP: For smooth animations.
 - ScrollMagic: For scroll-triggered effects.
