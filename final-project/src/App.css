@@ -1,0 +1,71 @@
+.main-title{
+  font-weight: 700;
+  font-family: 'Roboto', sans-serif;
+  font-weight: 100;
+  font-size: 300%;
+  margin-bottom: 35%;
+  margin-top: 1%;
+}
+
+.secondary-title{
+  font-weight: 700;
+  font-family: 'Roboto', sans-serif;
+  font-weight: 100;
+  font-size: 36px;
+}
+
+.center{
+  margin: auto auto;
+  text-align: center;
+}
+
+.landing{
+  background-color: rgb(244, 244, 244);
+  padding: 125px 5%;
+}
+
+
+a:link { 
+  text-decoration: none; 
+} 
+a:visited { 
+  text-decoration: none; 
+  color: black;
+} 
+a:hover { 
+  text-decoration: none; 
+} 
+a:active { 
+  text-decoration: none; 
+}
+
+/* arrow css from W3 School */
+/* https://www.w3schools.com/howto/howto_css_arrows.asp */
+
+.arrow {
+  border: solid rgb(255, 255, 255);
+  border-width: 0 5px 5px 0;
+  display: inline-block;
+  padding: 5px;
+}
+
+.right {
+  transform: rotate(-45deg);
+  -webkit-transform: rotate(-45deg);
+}
+
+.left {
+  transform: rotate(135deg);
+  -webkit-transform: rotate(135deg);
+}
+
+.up {
+  transform: rotate(-135deg);
+  -webkit-transform: rotate(-135deg);
+}
+
+.down {
+  transform: rotate(45deg);
+  -webkit-transform: rotate(45deg);
+}
+
