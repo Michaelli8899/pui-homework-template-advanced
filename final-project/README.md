@@ -2,6 +2,8 @@
 
 
 # FP2 - Evaluation of the Final project
+**Link to Prototype**: https://www.figma.com/proto/wu7bAm8R6dxzxucQQgZNI1/PUI-Final-Project?page-id=0%3A1&node-id=121-146&node-type=canvas&viewport=-3194%2C1091%2C0.33&t=KtIxrg2pQI8YIk3A-1&scaling=scale-down&content-scaling=fixed&starting-point-node-id=121%3A146&show-proto-sidebar=1
+
 **Briefly restate your motivation and a short description of your project.**
 
 This project displayed information about Chinese calligraphy, specifically about the history of the development of Chinese characters and the different strokes that make up Chinese calligraphy. The purpose of the project is to educate people about the topic of calligraphy and gain a better understanding of the elegance of beauty of the subject. My main motivation is to increase awareness of something very important in my culture, and I want more people to get an idea of what Chinese calligraphy is.
