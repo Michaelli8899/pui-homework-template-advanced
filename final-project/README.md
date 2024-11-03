@@ -16,7 +16,7 @@ When observing one of the participants, they weren’t able to identify that all
 The participants expressed confusion on the landing page where they didn’t know what to do when first seeing this page. Both participants didn’t know the homepage and the detail pages were scrollable. There were also issues regarding navigation, where one participant expressed they can’t find the way back to the home menu. 
 One of the participants expressed that they like how the information is spread up in chunks, making it easier for them to read through the information without getting overwhelmed.
 
-**On 0.5 pages (~300 words), discuss the user feedback you got during the evaluation (i.e. the usability test you did). Indicate which feedback you implemented, inspired new directions, or otherwise influenced your final design. **
+**On 0.5 pages (~300 words), discuss the user feedback you got during the evaluation (i.e. the usability test you did). Indicate which feedback you implemented, inspired new directions, or otherwise influenced your final design.**
 
 One of the recurring pieces of feedback was confusion about certain page interactions, particularly on the Strokes Page, where users didn’t realize the content was scrollable. In response, I added a visual prompt encouraging users to scroll down, making it easier for them to discover more content beyond the initial view. Additionally, I plan on adding visual cues across other pages to guide users to scroll down in general, ensuring that important content below the fold is not missed. These changes aimed to make the interaction more intuitive and ensure users wouldn't miss important details.
 
@@ -25,7 +25,7 @@ General navigation issues were also highlighted, with participants expressing di
 
 Finally, feedback regarding the animations was largely positive, with suggestions to make them more seamless and emphasize stroke starting and ending points. I would have to find a way to implement this by code. Currently, I imagine recording animations on Figma and implementing it as a video on the website.
 
-**On about max. 1 page (<100 words, ~2 images), show screenshots of your updated design based on the user feedback. **
+**On about max. 1 page (<100 words, ~2 images), show screenshots of your updated design based on the user feedback.**
 
 **History Page:**
 In response to feedback on the History Page, some participants didn't realize that each character represented a different variation of the character "fish" across time periods. To address this, I added an additional section to the homepage with a more descriptive label, highlighting the character evolution and providing contextual information to make this distinction clearer. Further, to help users better understand the page is scrollable, I added the “scroll” navigation to cue users to explore further and discover additional content that might otherwise go unnoticed.
@@ -33,7 +33,7 @@ In response to feedback on the History Page, some participants didn't realize th
 **Stroke Page:**
 On the Strokes Page, participants expressed confusion when landing on this page, as it wasn't immediately apparent that the pages were scrollable. To improve guidance, I added a visual cue on helping users recognize they can hover over the strokes to see additional information, and add the “scroll down” visual to encourage users to scroll down, helping them discover more content below the fold. Additionally, to address navigation issues where users struggled to return to the homepage, I implemented "Back" and for smoother navigation between sections.
 
-**On 0.5 pages (~300 words), summarize the feedback you received in the lab session and discuss how it influenced your design. **
+**On 0.5 pages (~300 words), summarize the feedback you received in the lab session and discuss how it influenced your design.**
 
 The feedback I received during the lab session was really valuable and gave me a lot of insight into how to improve my design. The group appreciated the animations and interactions, mentioning that they effectively conveyed the vision I had in mind. This positive feedback reassured me that the core elements of my design were on the right track, so I decided to keep them as they are.
 One key point raised was about the scale of the project, with questions about whether it was realistic given the available timeframe. This made me reassess the scope and prioritize the most important features to make sure I could complete the project on time. I originally planned to add another screen to the strokes page to include both basic and advanced strokes, but considering the scope, I decided to list that as a stretch goal instead.
@@ -43,7 +43,7 @@ There was also feedback about how the strokes should reload upon refresh. I beli
 Overall, the feedback on the page structure and overall design was positive, which reinforced my approach to keeping a user-friendly layout that centers key content effectively.
 
 
-**On 0.5 pages (~300 words), outline weekly milestones to plan your expected implementation progress until the end of the semester. List the JS libraries and other components (if applicable) that you plan to use. **
+**On 0.5 pages (~300 words), outline weekly milestones to plan your expected implementation progress until the end of the semester. List the JS libraries and other components (if applicable) that you plan to use.**
 
 **Week 1**
 - Developing the basic structure of the website using HTML and CSS.
@@ -65,7 +65,7 @@ Create the stroke animations for each stroke.
 - GSAP: For smooth animations.
 - ScrollMagic: For scroll-triggered effects.
 
-**On 0.5 pages (~300 words), outline how you plan to use Generative AI tools (e.g., ChatGPT, Gemini, Copilot, V0) to aid in the implementation (FP3 & FP4). What would you use? What do you expect Generative AI to help you with? What might it not be able to help you with? How would you use Generative AI responsibly? **
+**On 0.5 pages (~300 words), outline how you plan to use Generative AI tools (e.g., ChatGPT, Gemini, Copilot, V0) to aid in the implementation (FP3 & FP4). What would you use? What do you expect Generative AI to help you with? What might it not be able to help you with? How would you use Generative AI responsibly?**
 
 To help with the implementation process, I plan to use Generative AI tools like GitHub Copilot and ChatGPT to work more efficiently. GitHub Copilot will assist me in writing and filling in code, saving time on repetitive tasks and boilerplate code. By automating these simpler parts of coding, I can focus more on the complex aspects of the project that need creative thinking and careful problem-solving, ultimately speeding up progress.
 
