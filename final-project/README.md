@@ -11,10 +11,12 @@ This project displayed information about Chinese calligraphy, specifically about
 **History Page:**
 The participants a are generally positive about this page, where the organizational structure is clear and understandable. When observing the users, it is clear that both participants are able to go from the homepage to the detailed page, and use the navigation bar on the side.
 When observing one of the participants, they weren’t able to identify that all the characters were a different type of character fish. 
+![](https://github.com/Michaelli8899/pui-homework-template-advanced/blob/main/final-project/gifs/1-1.gif)
 
 **Strokes Page:**
 The participants expressed confusion on the landing page where they didn’t know what to do when first seeing this page. Both participants didn’t know the homepage and the detail pages were scrollable. There were also issues regarding navigation, where one participant expressed they can’t find the way back to the home menu. 
 One of the participants expressed that they like how the information is spread up in chunks, making it easier for them to read through the information without getting overwhelmed.
+![](https://github.com/Michaelli8899/pui-homework-template-advanced/blob/main/final-project/gifs/1-2.gif)
 
 **On 0.5 pages (~300 words), discuss the user feedback you got during the evaluation (i.e. the usability test you did). Indicate which feedback you implemented, inspired new directions, or otherwise influenced your final design.**
 
@@ -29,9 +31,11 @@ Finally, feedback regarding the animations was largely positive, with suggestion
 
 **History Page:**
 In response to feedback on the History Page, some participants didn't realize that each character represented a different variation of the character "fish" across time periods. To address this, I added an additional section to the homepage with a more descriptive label, highlighting the character evolution and providing contextual information to make this distinction clearer. Further, to help users better understand the page is scrollable, I added the “scroll” navigation to cue users to explore further and discover additional content that might otherwise go unnoticed.
+![](https://github.com/Michaelli8899/pui-homework-template-advanced/blob/main/final-project/gifs/2-1.gif)
 
 **Stroke Page:**
 On the Strokes Page, participants expressed confusion when landing on this page, as it wasn't immediately apparent that the pages were scrollable. To improve guidance, I added a visual cue on helping users recognize they can hover over the strokes to see additional information, and add the “scroll down” visual to encourage users to scroll down, helping them discover more content below the fold. Additionally, to address navigation issues where users struggled to return to the homepage, I implemented "Back" and for smoother navigation between sections.
+![](https://github.com/Michaelli8899/pui-homework-template-advanced/blob/main/final-project/gifs/2-2.gif)
 
 **On 0.5 pages (~300 words), summarize the feedback you received in the lab session and discuss how it influenced your design.**
 
