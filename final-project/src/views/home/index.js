@@ -1,11 +1,12 @@
-import HomePage from './HomePage.js';
+import HomePage from "./HomePage.js";
+import Navbar from "../partials/NavBar";
 
-function Index () {
+function Index(props) {
   return (
     <div>
-      <HomePage />
+      <HomePage timeline={props.timeline} />
     </div>
   );
 }
 
-export default Index
+export default Index;

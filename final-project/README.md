@@ -1,7 +1,7 @@
 # FP4 - Final Project Writeup
 
-
 # FP2 - Evaluation of the Final project
+
 **Link to Prototype**: https://www.figma.com/proto/wu7bAm8R6dxzxucQQgZNI1/PUI-Final-Project?page-id=0%3A1&node-id=121-146&node-type=canvas&viewport=-3194%2C1091%2C0.33&t=KtIxrg2pQI8YIk3A-1&scaling=scale-down&content-scaling=fixed&starting-point-node-id=121%3A146&show-proto-sidebar=1
 
 **Briefly restate your motivation and a short description of your project.**
@@ -12,11 +12,11 @@ This project displayed information about Chinese calligraphy, specifically about
 
 **History Page:**
 The participants a are generally positive about this page, where the organizational structure is clear and understandable. When observing the users, it is clear that both participants are able to go from the homepage to the detailed page, and use the navigation bar on the side.
-When observing one of the participants, they weren’t able to identify that all the characters were a different type of character fish. 
+When observing one of the participants, they weren’t able to identify that all the characters were a different type of character fish.
 ![](https://github.com/Michaelli8899/pui-homework-template-advanced/blob/main/final-project/gifs/1-1.gif)
 
 **Strokes Page:**
-The participants expressed confusion on the landing page where they didn’t know what to do when first seeing this page. Both participants didn’t know the homepage and the detail pages were scrollable. There were also issues regarding navigation, where one participant expressed they can’t find the way back to the home menu. 
+The participants expressed confusion on the landing page where they didn’t know what to do when first seeing this page. Both participants didn’t know the homepage and the detail pages were scrollable. There were also issues regarding navigation, where one participant expressed they can’t find the way back to the home menu.
 One of the participants expressed that they like how the information is spread up in chunks, making it easier for them to read through the information without getting overwhelmed.
 ![](https://github.com/Michaelli8899/pui-homework-template-advanced/blob/main/final-project/gifs/1-2.gif)
 
@@ -48,14 +48,15 @@ There was also feedback about how the strokes should reload upon refresh. I beli
 
 Overall, the feedback on the page structure and overall design was positive, which reinforced my approach to keeping a user-friendly layout that centers key content effectively.
 
-
 **On 0.5 pages (~300 words), outline weekly milestones to plan your expected implementation progress until the end of the semester. List the JS libraries and other components (if applicable) that you plan to use.**
 
 **Week 1**
+
 - Developing the basic structure of the website using HTML and CSS.
 - Finish both homepages and start looking into relevant JavaScript (JS) libraries for animations and user interactions (GSAP or ScrollMagic).
 
 **Week 2**
+
 - Implement the History Page with content to highlight character evolution when scrolling.
 - Create a template for how the history page can be implemented.
 
@@ -64,10 +65,12 @@ Finish implementing the history page and start on the individual strokes page.
 Create the stroke animations for each stroke.
 
 **Week 4**
+
 - Build a template for all strokes.
 - Finish implementing the strokes page.
 
 **JS Libraries and Components**
+
 - GSAP: For smooth animations.
 - ScrollMagic: For scroll-triggered effects.
 
@@ -88,7 +91,7 @@ To use Generative AI responsibly, I'll make sure to verify any suggestions they 
 For this design, I want to create an interactive website on cocktail recipients. The user will be able to explore different cocktail recipients, practice mixing a drink, and build their own recipes to save on the website. I want to create this project mainly because I like to mix drinks during leisure hours.
 
 Interaction: I imagine three main screens
-The main screen displays each drink. 
+The main screen displays each drink.
 
 ![image](https://github.com/user-attachments/assets/bd5031b0-2ca2-44d9-b74d-d8c5e1a9697d)
 
@@ -110,7 +113,7 @@ This page displays the history and transformation of Chinese calligraphy from th
 
 ![image](https://github.com/user-attachments/assets/2ce8e060-a2da-4311-b00b-a0bae66d1ff4)
 
-The second page would display a character, and when hovered over, it would highlight a specific stroke from the character. When clicked on, it would direct the user to a page specific to the stroke with other information regarding it. 
+The second page would display a character, and when hovered over, it would highlight a specific stroke from the character. When clicked on, it would direct the user to a page specific to the stroke with other information regarding it.
 
 ![image](https://github.com/user-attachments/assets/f6c4fd1d-cb87-4c7e-bf13-e730ea5cb577)
 ![image](https://github.com/user-attachments/assets/afbf629f-a5d1-4252-bf38-c663d72fc80e)
@@ -119,30 +122,28 @@ The second page would display a character, and when hovered over, it would highl
 
 For this project, I want to create some more interactive elements on top of my current portfolio on the homepage and about me page. My motivation is to display my design capabilities and increase my competitive advantage as a designer in the job market.
 
-Interaction: 
+Interaction:
 For the home page, I imagine a better display of the different projects, as well as the ability for users to preview an existing project by hovering over a small section.
 
 ![image](https://github.com/user-attachments/assets/80a45320-8f22-4e29-9579-8b934f2224e1)
 
-For the about me page, I’m imagining a sandbox area with blocks of “interesting things” that can be interacted with by dragging and dropping with simulated physics. Each box would open a window with images and artifacts related to my interests. 
+For the about me page, I’m imagining a sandbox area with blocks of “interesting things” that can be interacted with by dragging and dropping with simulated physics. Each box would open a window with images and artifacts related to my interests.
 
 ![image](https://github.com/user-attachments/assets/d492854f-fb8e-4f02-bbfa-b69c3a49495d)
 
 **Critique Summary:**
 
-Regarding the feedback I received from the critique, there is a common theme of scoping down for the first two projects, where it is important to pick a few topics to work on rather than building all 50+ characters/drinks. Before this critique session, I had concerns about an API, but I clarified what I wanted to do afterward. Another general feedback would be that people enjoyed each project sketch's potential interactions and want to see more interesting interactions. 
+Regarding the feedback I received from the critique, there is a common theme of scoping down for the first two projects, where it is important to pick a few topics to work on rather than building all 50+ characters/drinks. Before this critique session, I had concerns about an API, but I clarified what I wanted to do afterward. Another general feedback would be that people enjoyed each project sketch's potential interactions and want to see more interesting interactions.
 
 For the cocktail project, the audience liked the visual and interactive potential of the cocktail glasses, especially the different cup shapes and cocktail drinks. As the website is very graphic intensive, concerns have been raised about the accessibility of the graphics, which would make it harder for screen readers and other accessibility tools to use the website. Further, there are issues related to the complexity of managing the ingredients and using 3D renders, and an alternative 2D graphic was suggested for easier implementation. There are also concerns about the complexity of managing pouring animations, sliding animations, etc, on the 3rd making cocktail screen.
 
-The feedback on the calligraphy website was very positive overall, especially on the potential between information and visuals. The project was also suggested to be scoped down to avoid being too much to handle for this project. A section about the general order of the strokes for the characters was also suggested. 
+The feedback on the calligraphy website was very positive overall, especially on the potential between information and visuals. The project was also suggested to be scoped down to avoid being too much to handle for this project. A section about the general order of the strokes for the characters was also suggested.
 
-For the portfolio revamp, the critiques emphasized creating an engaging experience that doesn’t overshadow the actual projects. There is positive feedback regarding the drag-and-drop feature, but it would work better as a stand-alone feature rather than as the main feature implemented. There are also concerns about this feature working on mobile devices, especially with complex animations. 
+For the portfolio revamp, the critiques emphasized creating an engaging experience that doesn’t overshadow the actual projects. There is positive feedback regarding the drag-and-drop feature, but it would work better as a stand-alone feature rather than as the main feature implemented. There are also concerns about this feature working on mobile devices, especially with complex animations.
 
 **Feedback:**
 
 After the critique session in the lab, I decided to work on the calligraphy project. One of the main critiques I will be taking in is to narrow the scope to avoid the overwhelming complexity of the project. This critique has helped me, as when I was still sketching out the project, the general size was one big concern I had when proceeding with the project. To keep things focused, I will concentrate on one specific historical period of Chinese calligraphy for the components/strokes of calligraphy. Further, I will only use a few characters as examples, try to generalize the strokes, and not make them hyperspecific. This way, I can dive deeper into the details and keep the workload more manageable within the time I have.
-One critique I had was to include the stroke orders of characters. I would take part in that suggestion by including it as a small section with generalized information but not hyper-specific for every character. This makes the project better scoped while also providing necessary information for the users. 
+One critique I had was to include the stroke orders of characters. I would take part in that suggestion by including it as a small section with generalized information but not hyper-specific for every character. This makes the project better scoped while also providing necessary information for the users.
 
-One critique I had was to include the stroke orders of characters, and I would take part of that suggestion by including it as a small section with generalized information but not hyper-specific for every character. This makes the project better scoped while also providing necessary information for the users. 
-
-
+One critique I had was to include the stroke orders of characters, and I would take part of that suggestion by including it as a small section with generalized information but not hyper-specific for every character. This makes the project better scoped while also providing necessary information for the users.

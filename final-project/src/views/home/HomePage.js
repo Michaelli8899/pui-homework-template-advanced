@@ -1,18 +1,44 @@
-import Navbar from '../partials/NavBar';
+import react, { Component } from "react";
 
-import LandingPage from './LandingPage';
-import TimeLine from './TimeLine';
-function HomePage() {
+import Navbar from "../partials/NavBar";
+import TimeLine from "./TimeLine";
+
+import gsap from "gsap";
+import { useGSAP } from "@gsap/react";
+import { ScrollToPlugin } from "gsap/ScrollToPlugin";
+import { ScrollTrigger } from "gsap/ScrollTrigger";
+
+import TextAnimation from "./TextAnimation";
+import ReadMore from "../partials/ReadMore";
+gsap.registerPlugin(useGSAP, ScrollTrigger);
+
+const LandingPage = () => {
   return (
-    <div>
-      <Navbar />
-        <main>
-            <LandingPage />
-            <TimeLine />
-        </main>
-        
+    <div className="landing">
+      <h1 className="main-title margin-bottom-title">
+        Development of Chinese Characters
+      </h1>
+      <TextAnimation />
+      <ReadMore
+        content="Scroll to Read More"
+        link="#timeline-start"
+        direction="down"
+      />
     </div>
   );
-}
+};
+
+const HomePage = (props) => {
+  return (
+    <div>
+      <main>
+        <LandingPage />
+        <div id="timeline">
+          <TimeLine timeline={props.timeline} />
+        </div>
+      </main>
+    </div>
+  );
+};
 
 export default HomePage;

@@ -1,35 +1,78 @@
 .text-animation img {
-    position: absolute;
-    top: 10vh;
-    left: 32.5%;
-    animation-name: fade;
-    animation-iteration-count: infinite;
-    animation-duration: 21s; /* Duration is 4s per image (7 images x 4s = 28s) */
+  position: absolute;
+  top: max(150px, 5vw);
+  left: 32.5%;
+  width: 35vw;
+  animation-name: fade;
+  animation-iteration-count: infinite;
+  animation-duration: 21s; /* Duration is 4s per image (7 images x 4s = 28s) */
 }
-
 
 @-webkit-keyframes fade {
-    0% {opacity: 0;}
-    20% {opacity: 0;}
-    33% {opacity: 1;}
-    53% {opacity: 0;}
-    100% {opacity: 0;}
+  0% {
+    opacity: 0;
+  }
+  20% {
+    opacity: 0;
+  }
+  33% {
+    opacity: 1;
+  }
+  53% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 0;
+  }
 }
 @keyframes fade {
-    0% {opacity: 0;}
-    20% {opacity: 0;}
-    33% {opacity: 1;}
-    53% {opacity: 0;}
-    100% {opacity: 0;}
+  0% {
+    opacity: 0;
+  }
+  20% {
+    opacity: 0;
+  }
+  33% {
+    opacity: 1;
+  }
+  53% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 0;
+  }
 }
 
 /* Apply specific delays for each image */
-.img1 { animation-delay: -3s; -webkit-animation-delay: -3s;}
-.img2 { animation-delay: -6s; -webkit-animation-delay: -6s;}
-.img3 { animation-delay: -9s; -webkit-animation-delay: -9s;}
-.img4 { animation-delay: -12s; -webkit-animation-delay: -12s;}
-.img5 { animation-delay: -15s; -webkit-animation-delay: -15s;}
-.img6 { animation-delay: -18s; -webkit-animation-delay: -18s;}
-.img7 { animation-delay: -21s; -webkit-animation-delay: -21s;}
-
-
+.img0 {
+  animation-delay: -3s;
+  -webkit-animation-delay: -3s;
+}
+.img1 {
+  animation-delay: -6s;
+  -webkit-animation-delay: -6s;
+}
+.img2 {
+  animation-delay: -9s;
+  -webkit-animation-delay: -9s;
+}
+.img3 {
+  animation-delay: -12s;
+  -webkit-animation-delay: -12s;
+}
+.img4 {
+  animation-delay: -15s;
+  -webkit-animation-delay: -15s;
+}
+.img5 {
+  animation-delay: -18s;
+  -webkit-animation-delay: -18s;
+}
+.img6 {
+  animation-delay: -21s;
+  -webkit-animation-delay: -21s;
+}
+.img7 {
+  animation-delay: -24s;
+  -webkit-animation-delay: -24s;
+}
