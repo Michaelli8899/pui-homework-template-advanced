@@ -23,10 +23,12 @@ p {
   font-size: 300%;
   margin-top: 1%;
   margin-bottom: -5px;
+  display: flex;
+  align-items: center;
 }
 
 .margin-bottom-title {
-  margin-bottom: 30vw;
+  margin-bottom: 33vw;
 }
 
 .secondary-title {
@@ -129,4 +131,51 @@ li.nav-item {
     url("/public/fonts/LXGWWenKaiTC-Light.woff2") format("woff2");
   font-weight: light;
   font-style: normal;
+}
+
+.to-top{
+  position: fixed;
+  bottom: 20px;
+  right: 20px;
+  background-color: rgba(107, 107, 107, 0.352);
+  border-radius: 50%;
+  padding: 10px;
+  z-index: 100;
+  width: 7vw;
+  height: 7vw;
+  backdrop-filter: blur(2px);
+  border: 1px solid rgba(255, 255, 255, 0.603);
+  cursor: pointer;
+}
+
+.to-top:hover{
+  background-color: rgba(107, 107, 107, 0.8);
+  color: rgb(255, 255, 255);
+}
+
+.to-top p{
+  font-size: 1vw;
+  font-weight: 100;
+  color: rgb(0, 0, 0);
+  margin-bottom: 10px;
+}
+
+.back-button {
+  background-color: rgb(178, 178, 178);
+  padding: 0.5% 1%;
+  border-radius: 100px;
+  width: min(10vw, 100px);
+  height: min(4vw, 40px);
+  color: black;
+  font-size: min(2vw, 20px);
+  font-weight: 800;
+  border: 0px;
+  cursor: pointer;
+  margin-top: 20px;
+  margin-left: 20px;
+}
+
+.back-button:hover {
+  background-color: rgb(10, 5, 5);
+  color: white;
 }

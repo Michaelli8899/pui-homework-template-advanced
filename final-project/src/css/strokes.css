@@ -48,7 +48,7 @@
 
 .stroke-animation {
   position: absolute;
-  top: 250px;
+  top: 290px;
   left: 25%;
   width: 50%;
   height: 25vw;
@@ -147,7 +147,7 @@
     width: 50%;
     height: 100%;
     position: sticky;
-    top: 30%;
+    top: 20vh;
 }
 
 .specifics-img img {

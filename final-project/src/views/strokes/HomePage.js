@@ -2,6 +2,9 @@ import React from "react";
 import LandingPage from "./LandingPage";
 import Specifics from "./Specifics";
 
+import gsap from "gsap";
+import { useGSAP } from "@gsap/react";
+
 const strokeInfo = [
   {
     name: "Dot Stroke",
@@ -70,6 +73,9 @@ const strokeInfo = [
 ]
 
 function HomePage() {
+  useGSAP(() => {
+    gsap.to(window, { duration: 1, scrollTo: { y: 0 } });
+  })
   return (
     <div>
       <main>

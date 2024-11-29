@@ -55,7 +55,9 @@ class TimeLine extends Component {
   render() {
     return (
       <div className="time-line">
-        <div className="line" id="timeline-start"></div>
+        <div className="line" id="timeline-start">
+            
+        </div>
         <div className="cards">
           {this.props.timeline.map((img, idx) => {
             return (

@@ -16,7 +16,7 @@ class LandingPage extends Component {
 
         <StrokeLanding />
 
-        <ReadMore direction="down" content="Read More" />
+        <ReadMore direction="down" content="Scroll To Read More" link = '#yong-title'/>
       </div>
     );
   }

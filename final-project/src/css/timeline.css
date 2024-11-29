@@ -13,21 +13,22 @@
   justify-content: space-between;
   margin: 5% 5%;
   flex-wrap: wrap;
+  
 }
 
 .card-img {
   width: 100%;
-  height: 30%;
+  height: 50%;
   object-fit: cover;
-  margin-top: 5%;
+  margin-top: 20%;
 }
 
 .time-period-card {
   background-color: rgb(210, 210, 210);
-  padding: 1% 2%;
+  padding: 0.5% 1%;
   box-sizing: border-box;
   flex: 0 1 auto;
-  height: 30vw;
+  height: 100%;
   width: 10%;
   border-radius: 4px;
 }
@@ -45,15 +46,15 @@
 }
 
 .time-period-card h1 {
-  font-size: 1vw;
+  font-size: 1.5vw;
   font-weight: 100;
   text-align: left;
   height: 50px;
 }
 
 .time-period-card img {
-  width: 5vw;
-  height: 30%;
+  width: 7vw;
+  height: 50%;
   object-fit: cover;
   margin: 2% 0;
 }

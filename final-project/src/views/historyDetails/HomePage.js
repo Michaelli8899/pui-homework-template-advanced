@@ -8,6 +8,8 @@ import gsap from "gsap";
 import { useGSAP } from "@gsap/react";
 import { ScrollTrigger } from "gsap/ScrollTrigger";
 
+import BackButton from "../partials/BackButton";
+
 const text = [
   {
     title: "Dynasty: Shang 商",
@@ -63,25 +65,25 @@ class SideBar extends Component {
     this.myRef = React.createRef();
   }
   handleClick = (e) => {
-    this.handleScrollTo(e);
-    this.props.setCurrTime(parseInt(e.target.classList[0]));
-    const timeline = [
-      "small",
-      "small",
-      "small",
-      "small",
-      "small",
-      "small",
-      "small",
-    ];
-    timeline[parseInt(e.target.classList[0])] = "large";
-    this.props.setTimeline(timeline);
+    const ALL_TYPES = [ "Oracle Bone Script", 
+                        "Bronze Inscription", 
+                        "Seal Script", 
+                        "Clerical Script", 
+                        "Cursive Script", 
+                        "Running Script", 
+                        "Regular Script"];
+    const idx = ALL_TYPES.indexOf(e.target.textContent);
+    this.handleScrollTo(e, idx);
   };
 
-  handleScrollTo = (e) => {
+  handleScrollTo = (e, idx) => {
+    let to = `#history-${idx}`;
     const id = parseInt(e.target.classList[0]);
-    // const to = `#history-${id}`
-    const to = `${id * (100 / 7)}%`;
+    gsap.to(window, {
+      duration: 1,
+      scrollTo: { y: to, offsetY: -50 },
+      ease: "power2.inOut",
+    });
   };
 
   render() {
@@ -141,14 +143,10 @@ class MainContent extends Component {
   executeScroll = () => this.myRef.current.scrollIntoView();
 
   componentDidMount() {
-    console.log("id", this.props.id);
-    console.log("fetching", `./history-text/${this.props.id}.txt`);
     fetch(`./history-text/${this.props.id}.txt`)
       .then((r) => r.text())
       .then((text) => {
-        console.log("success", text);
         this.setState({ text: text });
-        console.log("state", this.state);
       });
   }
 
@@ -199,10 +197,10 @@ function HomePage(props) {
   useEffect(() => {
     // Scroll to the element with the ID from the fragment identifier
     if (location.hash) {
-      const element = document.querySelector(location.hash);
-      if (element) {
-        element.scrollIntoView({ behavior: "smooth" });
-      }
+      console.log(location.hash);
+      const element = location.hash;
+      gsap.to(window, { duration: 1, 
+                        scrollTo: { y: element, offsetY: -50 }});
     }
   }, [location.hash]);
 
@@ -330,6 +328,7 @@ function HomePage(props) {
     <div>
       <main>
         <div className="verticle-line">
+          <BackButton link = 'history'/>
           <ul>
             {props.timeline.map((item, idx) => {
               return (
