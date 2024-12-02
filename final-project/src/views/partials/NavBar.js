@@ -23,7 +23,7 @@ class NavBar extends Component {
         }
         return (
             <>
-                <nav className="nav-bar">
+                <nav className="nav-bar" role="navigation">
                     <ul>
                         <li className={`nav-item ${this.state.navBold}`}
                             onClick={() => {

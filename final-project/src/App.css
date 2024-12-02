@@ -23,8 +23,6 @@ p {
   font-size: 300%;
   margin-top: 1%;
   margin-bottom: -5px;
-  display: flex;
-  align-items: center;
 }
 
 .margin-bottom-title {
@@ -37,6 +35,11 @@ p {
   font-weight: 100;
   font-size: 36px;
   margin-top: 0;
+}
+
+.tertiary-text{
+  font-size: 24px;
+  font-weight: 200;
 }
 
 .center {
@@ -117,21 +120,6 @@ li.nav-item {
   font-weight: 700;
 }
 
-@font-face {
-  font-family: "Cormorant";
-  src: url("/public/fonts/Cormorant-Light.woff") format("woff"),
-    url("/public/fonts/Cormorant-Light.woff2") format("woff2");
-  font-weight: light;
-  font-style: normal;
-}
-
-@font-face {
-  font-family: "LXGWWenKaiTC";
-  src: url("/public/fonts/LXGWWenKaiTC-Light.woff") format("woff"),
-    url("/public/fonts/LXGWWenKaiTC-Light.woff2") format("woff2");
-  font-weight: light;
-  font-style: normal;
-}
 
 .to-top{
   position: fixed;
@@ -141,8 +129,8 @@ li.nav-item {
   border-radius: 50%;
   padding: 10px;
   z-index: 100;
-  width: 7vw;
-  height: 7vw;
+  width: 9vw;
+  height: 9vw;
   backdrop-filter: blur(2px);
   border: 1px solid rgba(255, 255, 255, 0.603);
   cursor: pointer;
@@ -159,6 +147,8 @@ li.nav-item {
   color: rgb(0, 0, 0);
   margin-bottom: 10px;
 }
+
+
 
 .back-button {
   background-color: rgb(178, 178, 178);
@@ -178,4 +168,91 @@ li.nav-item {
 .back-button:hover {
   background-color: rgb(10, 5, 5);
   color: white;
+}
+
+
+
+@media (max-width: 800px) {
+  .main-title {
+    font-size: 200%;
+    margin-top: 0px;
+  }
+
+  .secondary-title {
+    font-size: 24px;
+  }
+
+  .back-button{
+    width: 100px;
+    height: 40px;
+    font-size: 20px;
+  }
+
+  .tertiary-text{
+    font-size: 18px;
+    font-weight: 200;
+  }
+  .landing {
+    /* background-color: rgb(244, 244, 244); */
+    padding: 75px 5%;
+  }
+
+}
+
+
+@media (max-width: 500px) {
+  .main-title {
+    font-size: 150%;
+  }
+
+  .secondary-title {
+    font-size: 18px;
+  }
+  .to-top p{
+    display: none;
+  }
+}
+
+@media(max-width: 400px){
+  .back-button{
+    width: 100px;
+    height: 40px;
+    font-size: 20px;
+  }
+
+  .tertiary-text{
+    font-size: 14px;
+    font-weight: 200;
+  }
+
+  .back-button{
+    width: 40px;
+    height: 20px;
+    font-size: 10px;
+  }
+
+}
+
+@media (max-width: 380px) {
+  .main-title {
+    font-size: 100%;
+  }
+
+}
+
+
+@font-face {
+  font-family: "Cormorant";
+  src: url("/public/fonts/Cormorant-Light.woff") format("woff"),
+    url("/public/fonts/Cormorant-Light.woff2") format("woff2");
+  font-weight: light;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "LXGWWenKaiTC";
+  src: url("/public/fonts/LXGWWenKaiTC-Light.woff") format("woff"),
+    url("/public/fonts/LXGWWenKaiTC-Light.woff2") format("woff2");
+  font-weight: light;
+  font-style: normal;
 }

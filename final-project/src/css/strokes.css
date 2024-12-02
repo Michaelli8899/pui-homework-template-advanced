@@ -179,3 +179,58 @@
   background-color: rgb(180, 180, 180);
   color: black;
 }
+
+@media (max-width: 800px) {
+  .stroke-part-main {
+    top: max(150px, 12vw);
+  }
+  .stroke-animation {
+    top: 200px;
+  }
+}
+
+@media (max-width: 400px) {
+  .stroke-part-main {
+    top: max(130px, 12vw);
+  }
+
+  .specifics-main, .strokes-content-main{
+    flex-direction: column;
+  }
+
+  .specifics-img{
+    width: 50%;
+    margin-left: 20%;
+    background-color: white;
+    z-index: -1;
+  }
+
+  .strokes-content-img{
+    width: 50%;
+    background-color: white;
+    z-index: 100;
+    padding: 10% 30%;
+    top: 20vh;
+  }
+
+  .specifics-txt, .strokes-content-txt{
+    width: 100%;
+  }
+
+  .specifics-content, .strokes{
+    margin-top: 50vh;
+    margin-bottom: 50vh;
+  }
+
+  .specifics-content h1, .stroke-text h1 {
+    font-size: 25px;
+  }
+
+  .specifics-content p, .stroke-text p {
+    font-size: 15px;
+  }
+
+  .stroke-animation {
+    top: max(150px, 12vw)
+  }
+}

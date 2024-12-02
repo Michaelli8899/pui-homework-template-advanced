@@ -329,12 +329,45 @@ function HomePage(props) {
       <main>
         <div className="verticle-line">
           <BackButton link = 'history'/>
-          <ul>
+          <ul className = 'history-detail-side-bar'>
             {props.timeline.map((item, idx) => {
-              return (
-                <li key={idx} id={idx}>
+              let size = currTime === idx ? "large" : "small"
+              const ordering = {
+                order: -1,
+              }
+              if (size === 'large') {
+                return (
+                  <li key={idx} id={idx} style = {ordering}>
                   <SideBar
-                    size={currTime === idx ? "large" : "small"}
+                    size={size}
+                    chinese={item.chinese}
+                    name={item.name}
+                    pinyin={item.pinyin}
+                    timeframe={item.timeframe}
+                    setCurrTime={setCurrTime}
+                    setTimeline={setTimeline}
+                  />
+                </li>
+                )
+              }
+            })}
+            {props.timeline.map((item, idx) => {
+              let bold = currTime === idx ? "bold" : ""
+              let fontWeight;
+              if (currTime === idx) {
+                fontWeight = {
+                  fontSize: '2vh',
+                }
+              }else{
+                fontWeight = {
+                  ffontSize: '2.5vh',
+                }
+              }
+
+              return (
+                <li key={idx} id={idx} style = {fontWeight}>
+                  <SideBar
+                    size={"small"}
                     chinese={item.chinese}
                     name={item.name}
                     pinyin={item.pinyin}

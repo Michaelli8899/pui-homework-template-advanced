@@ -12,6 +12,13 @@
   margin: 0 20px;
 }
 
+.history-detail-side-bar{
+  margin-left: -30px;
+  display: flex;
+  flex-direction: column;
+  gap: 0px;
+}
+
 .side-bar-large,
 .side-bar {
   display: flex;
@@ -23,17 +30,17 @@
 }
 
 .side-bar-small-title {
-  font-size: 20px;
+  font-size: 2vh;
   margin-bottom: 0px;
   margin-top: 0px;
 }
 
 .side-bar-large {
-  margin-bottom: 20px;
+  margin-bottom: 10px;
 }
 
 .side-bar-large-title {
-  font-size: 55px;
+  font-size: 3.5vh;
   margin-bottom: 0px;
   margin-top: 0px;
 }
@@ -59,14 +66,11 @@
 .history-main-content {
   margin: 300px 10% 0px max(250px, 22%);
   gap: 20%;
-  /* background-color: rgba(90, 90, 90, 0.5); */
-  overflow: clip;
-  align-items: center;
 }
 
 .history-main-img {
   position: fixed;
-  top: 300px;
+  top: 25vh;
   width: 35%;
 }
 
@@ -86,28 +90,94 @@
   justify-content: center;
 }
 
+.chunk{
+  margin-top: 45vh;
+  margin-bottom: 45vh;
+}
+
 .history-main-img.show {
   display: block;
 }
 
-/* .history-img1{
+@media (max-width: 800px) {
+  .verticle-line {
+    background-color: transparent;
+  }
+
+  .history-detail-side-bar {
+    display: block;
+  }
+
+  .side-bar{
     display: none;
+  }
+
+  .history-main-content {
+    margin: 0px 10% 0px 10%;
+    gap: 5%;
+  }
+
+  .history-main-img {
+    top: 50vh;
+    width: 30%;
+  }
+
+  .side-bar-large-title {
+    font-size: 3vh;
+  }
+
+  .history-scrolling-text {
+    flex-basis: 30%;
+    margin: 0px 0px 0px max(290px, 20%);
+  }
+
+  .side-bar-chinese .side-bar-name {
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    gap: 2%;
+  }
+
+  .side-bar-chinese{
+    align-items: baseline;
+  }
+
+  .side-bar-medium-title {
+    font-size: 20px;
+    width: 200%;
+  }
 }
-.history-img2{
+
+@media (max-width: 400px){
+
+  .history-detail-side-bar, .full-side-bar {
+    background-color: white;
+  }
+  
+  .side-bar-large{
+    background-color: white;
+    padding: 10px;
+    margin-left: -20px;
+  }
+
+  .history-scrolling-text {
+    flex-basis: 30%;
+    margin: 0px 0px 0px 0px;
+  }
+
+  .history-main-img {
+    top: 30vh;
+    width: 80%;
+    background-color: white;
+  }
+
+  .side-bar-medium-title {
     display: none;
+  }
+
+  .side-bar-large-title {
+    font-size: 2.5vh;
+    background-color: white;
+  }
+
 }
-.history-img3{
-    display: none;
-}
-.history-img4{
-    display: none;
-}
-.history-img5{
-    display: none;
-}
-.history-img6{
-    display: none;
-}
-.history-img7{
-    display: none;
-} */

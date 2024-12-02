@@ -302,8 +302,8 @@ function StrokesContent (props) {
               tl = gsap.timeline({
                 scrollTrigger: {
                   trigger: `.txt-${props.type}-${idx}`,
-                  start: "top 50%",
-                  end: "end 35%",
+                  start: "top 95%",
+                  end: "end 75%",
                   scrub: true,
                   markers: true,
                   toggleActions: "restart none none none",

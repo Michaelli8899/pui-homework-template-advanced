@@ -76,3 +76,9 @@
     animation-delay: -24s;
     -webkit-animation-delay: -24s;
 }
+
+@media (max-width: 800px) {
+  .text-animation img {
+    top: max(100px, 3vw);
+  }
+}

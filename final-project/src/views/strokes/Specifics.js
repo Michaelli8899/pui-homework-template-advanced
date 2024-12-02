@@ -82,7 +82,7 @@ function Specifics(props) {
             Eight Principles of Yong{" "}
             <span className="chinese-char">(永字八法)</span>
         </h1>
-        <p>
+        <p className = 'tertiary-text'>
             The Eight Principles of Yong{" "}
             <span className="chinese-char">(永字八法)</span> is the fundamental
             brush strokes in Chinese calligraphy, all demonstrated in the single

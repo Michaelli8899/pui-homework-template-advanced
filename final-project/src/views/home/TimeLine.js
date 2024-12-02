@@ -1,5 +1,6 @@
 import react, { Component } from "react";
 import ReadMore from "../partials/ReadMore";
+// import { useMediaQuery } from 'react-responsive';
 
 import { motion } from "framer-motion";
 import { Outlet, Link } from "react-router-dom";
@@ -53,6 +54,8 @@ class TimeLine extends Component {
     super(props);
   }
   render() {
+    // const isMobile = useMediaQuery({ query: '(max-width: 750px)' });
+
     return (
       <div className="time-line">
         <div className="line" id="timeline-start">
