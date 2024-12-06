@@ -1,6 +1,7 @@
 # FP4 - Final Project Writeup
 
 ## Part 1: Website Description
+### Description
 The purpose of my calligraphy website is to share the beauty of Chinese calligraphy and help people understand the Chinese written language, which is such an important part of my culture. I want to make calligraphy interesting and show why it's still meaningful today. By highlighting both the art and the history of Chinese characters, I hope the website can help people appreciate my culture in a modern context.
 
 The website has two main sections: the history of the development of Chinese characters and the fundamental strokes used in calligraphy. The history page explores the evolution of Chinese characters over seven distinct phases using the fish character "鱼" as an example. Each phase discusses key characteristics and provides a detailed study of the fish character, offering insight into the fascinating journey of Chinese script through time.
@@ -10,6 +11,16 @@ The strokes section introduces the basic building blocks of calligraphy: the eig
 To make the learning process engaging, I've added animations that bring the strokes and historical elements to life, making the experience more dynamic for users. The content is broken into small, easy-to-understand sections, ensuring it remains accessible without feeling overwhelming. The website is designed to make learning enjoyable and straightforward, regardless of your level of experience.
 
 The website is for anyone curious about Chinese culture or calligraphy, whether you're just starting out or looking to deepen your appreciation. Through this project, I want to foster a deeper understanding of this fundamental element of Chinese culture, making it accessible to a broader audience while celebrating its cultural significance.
+
+### Responsive Widths
+#### History Landing Page
+1) 800px
+2) 350px
+#### History Detail Page
+1) 800px
+2) 400px
+#### Stroke Landing and Detail Page
+1) 400px
 
 ## Part 2: User Interaction
 ### History Homepage
