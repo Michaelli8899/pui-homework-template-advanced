@@ -12,6 +12,7 @@ import { ScrollTrigger } from "gsap/ScrollTrigger";
 import BackButton from "../partials/BackButton";
 
 const text = {
+  //all the information in JSON format
   0: [
     {
       title: "Dynasty: Shang 商",
@@ -321,11 +322,14 @@ const text = {
 
 gsap.registerPlugin(useGSAP, ScrollTrigger);
 
+// Sidebar component
 class SideBar extends Component {
   constructor(props) {
     super(props);
     this.myRef = React.createRef();
   }
+  // handle when the user clicks on the sidebar element
+  // finds out which item is pressed
   handleClick = (e) => {
     const ALL_TYPES = [
       "Oracle Bone Script",
@@ -340,6 +344,7 @@ class SideBar extends Component {
     this.handleScrollTo(e, idx);
   };
 
+  // handle scroll to a specific section of the page
   handleScrollTo = (e, idx) => {
     let to = `#history-${idx}`;
     const id = parseInt(e.target.classList[0]);
@@ -351,7 +356,9 @@ class SideBar extends Component {
   };
 
   render() {
+    //if there are three chinese characters
     const THREE = this.props.chinese[2] !== "_";
+    // small sidebar component
     const small = (
       <div className="side-bar">
         <div onClick={(e) => this.handleClick(e)}>
@@ -378,6 +385,8 @@ class SideBar extends Component {
         </div>
       </div>
     );
+
+    //large sidebar component with more information
     const large = (
       <div className="side-bar-large">
         <div>
@@ -418,12 +427,14 @@ class SideBar extends Component {
         </div>
       </div>
     );
+    // set the returned component dynamically based on the size
     const title = this.props.size === "small" ? small : large;
-
+    
     return <div className="full-side-bar">{title}</div>;
   }
 }
 
+// content component of each time period
 class MainContent extends Component {
   executeScroll = () => this.myRef.current.scrollIntoView();
 
@@ -457,7 +468,9 @@ class MainContent extends Component {
   }
 }
 
+// main component
 function HomePage(props) {
+  // setting which timeline is currently in view, start with the first one
   const [timeline, setTimeline] = React.useState([
     "large",
     "small",
@@ -468,6 +481,7 @@ function HomePage(props) {
     "small",
   ]);
   const [currTime, setCurrTime] = React.useState(-1);
+  //constant for how many timeperiods there are
   const TIMELINES = [0, 1, 2, 3, 4, 5, 6];
 
   const location = useLocation();
@@ -482,12 +496,15 @@ function HomePage(props) {
   }, [location.hash]);
 
   useGSAP(() => {
+    // set all images to be invisible at first
     for (let i = 1; i < 7; i++) {
       gsap.to(`.history-img${i}`, {
         opacity: 0,
       });
     }
 
+    //setting a function that creates a GSAP timeline triggered by the text element
+    //the timeline will set the `timeline` and `currTime` variable on scroll
     function createTimeline(imgID, isAppear) {
       let tl;
       if (isAppear) {
@@ -497,9 +514,7 @@ function HomePage(props) {
             start: "top top",
             end: "20% top",
             scrub: true,
-            // markers: true,
             toggleActions: "restart none none none",
-            // snap: 0.5,
             onEnter: () => {
               setCurrTime(imgID);
               let timeline = [
@@ -540,9 +555,7 @@ function HomePage(props) {
             start: "top top",
             end: "40% top",
             scrub: true,
-            // markers: true,
             toggleActions: "restart none none pause",
-            // snap: 0.5,
             onLeave: (self) => {
               if (imgID !== 6) {
                 setCurrTime(imgID + 1);
@@ -578,6 +591,8 @@ function HomePage(props) {
       }
       return tl;
     }
+    // loop through all the images and execute the timeline for each image
+    // adjust the opacity of the image based on the scroll position
     for (let i = 0; i < 7; i++) {
       createTimeline(i, true).fromTo(
         `.history-img${i}`,
@@ -601,6 +616,7 @@ function HomePage(props) {
       }
     }
   });
+
   return (
     <div>
       <main>
@@ -634,8 +650,6 @@ function HomePage(props) {
               if (currTime === idx) {
                 fontSize = {
                   fontSize: "5vh",
-                  // marginBottom: '3vh',
-                  // marginTop: '3vh',
                   backgroundColor: "black",
                 };
               } else {

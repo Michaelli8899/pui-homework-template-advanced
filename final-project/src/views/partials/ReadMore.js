@@ -7,7 +7,7 @@ class ReadMore extends Component {
   constructor(props) {
     super(props);
   }
-
+  //scroll to the section of the page based on the link in props
   handleScrollTo = () => {
     gsap.to(window, {
       duration: 1,
@@ -19,11 +19,9 @@ class ReadMore extends Component {
     return (
       <div className="read-more">
         <h3 className="center">{this.props.content}</h3>
-        {/* <a href={this.props.link} className="center"> */}
         <div className="circle center" onClick={() => this.handleScrollTo()}>
           <i className={`arrow ${this.props.direction}`}></i>
         </div>
-        {/* </a> */}
       </div>
     );
   }

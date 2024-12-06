@@ -5,9 +5,11 @@ import ReadMore from "../partials/ReadMore";
 import { motion } from "framer-motion";
 import { Outlet, Link } from "react-router-dom";
 
+// individual card for each time period
 class TimePeriodCard extends Component {
   render() {
     return (
+      // framer motion for animation
       <motion.div
         initial={{ opacity: 0 }}
         transition={{ ease: "easeOut", duration: 0.3 }}
@@ -31,7 +33,7 @@ class TimePeriodCard extends Component {
             <div className="chinese-name">
               {this.props.chinese.map((word, idx) => {
                 const display =
-                  word === "_" ? { color: "rgb(0, 0, 0, 0)" } : {};
+                  word === "_" ? { display: "none" } : {};
                 return (
                   <h2 className="chinese-char" key={idx} style={display}>
                     {word}
@@ -42,7 +44,7 @@ class TimePeriodCard extends Component {
             <div className="pinyin-name">
               {this.props.pinyin.map((word, idx) => {
                 const display =
-                  word === "_" ? { color: "rgb(0, 0, 0, 0)" } : {};
+                  word === "_" ? { display: "none" } : {};
                 return (
                   <h3 key={idx} style={display}>
                     {word}
@@ -57,10 +59,8 @@ class TimePeriodCard extends Component {
   }
 }
 
+// all the cards
 class TimeLine extends Component {
-  constructor(props) {
-    super(props);
-  }
   render() {
     return (
       <div className="time-line">
@@ -78,7 +78,6 @@ class TimeLine extends Component {
                 timeframe={img.timeframe}
                 link={`/history/timeline#history-${idx}`}
               />
-              // </Link>
             );
           })}
         </div>

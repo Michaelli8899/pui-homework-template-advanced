@@ -81,10 +81,10 @@ function App() {
         <Route
           exact
           path="/pui-homework-template-advanced/final-project"
-          element={<History timeline={timeline} />}
+          // element={<History timeline={timeline} />}
         />
         <Route path="/" 
-        element={<History timeline={timeline} />} 
+        // element={<History timeline={timeline} />} 
         />
         <Route path="/history" element={<History timeline={timeline} />} />
         <Route

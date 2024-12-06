@@ -10,30 +10,24 @@ import {
   Wan,
 } from "../partials/strokes/index";
 
+// element that allows the user to hover over
 class StrokeLanding extends Component {
   constructor(props) {
     super(props);
   }
 
-  handleHover(e) {
-    console.log("hovered", e.target);
-  }
-
-  clickTest() {
-    console.log("clicked");
-  }
-
+  //all the hover mechanism is within the individual components
   render() {
     return (
       <div className="stroke-img">
-        <Dian onClick={this.handleHover} />
-        <Heng onClick={this.handleHover} />
-        <Shu onClick={this.handleHover} />
-        <Na onClick={this.handleHover} />
-        <Pie onClick={this.handleHover} />
-        <Ti onClick={this.handleHover} />
-        <Wan onClick={this.handleHover} />
-        <Gou onClick={this.handleHover} />
+        <Dian />
+        <Heng />
+        <Shu />
+        <Na />
+        <Pie />
+        <Ti />
+        <Wan />
+        <Gou />
       </div>
     );
   }

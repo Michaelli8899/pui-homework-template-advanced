@@ -1,5 +1,6 @@
 import React from "react";
 import { Link } from "react-router-dom";
+//buton that redirect to a strokes page
 function Button(props) {
   return (
     <Link to={`/strokes/${props.linkto}`}>

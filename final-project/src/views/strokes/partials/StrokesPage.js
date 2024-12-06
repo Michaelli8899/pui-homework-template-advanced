@@ -7,6 +7,7 @@ import { useGSAP } from "@gsap/react";
 import { ScrollTrigger } from "gsap/ScrollTrigger";
 import ToTopButton from "../../partials/ToTopButton";
 
+//all the information in JSON form that will be dynamically selected and rendered
 const STROKE_TEXTS = {
   heng: [
     {
@@ -291,6 +292,8 @@ const STROKE_TEXTS = {
   ],
 };
 
+
+
 class StrokeAnimation extends Component {
   render() {
     return (
@@ -318,15 +321,19 @@ class StrokeAnimation extends Component {
   }
 }
 
+
+//content with scroll animation
 function StrokesContent(props) {
   useGSAP(() => {
+    
     let length = props.imgs.length;
+    // set all images to be invisible at first
     for (let i = 1; i < length; i++) {
       gsap.to(`.img-${props.type}-${i}`, {
         opacity: 0,
       });
     }
-
+    //setting a function that creates a GSAP timeline triggered by the text element
     function createTimeline(idx, isAppear) {
       let tl;
       if (isAppear) {
@@ -356,6 +363,8 @@ function StrokesContent(props) {
       return tl;
     }
 
+    // loop through all the images and execute the timeline for each image
+    // adjust the opacity of the image based on the scroll position
     for (let i = 0; i < length; i++) {
       createTimeline(i, true).fromTo(
         `.img-${props.type}-${i}`,
@@ -379,7 +388,7 @@ function StrokesContent(props) {
       }
     }
   });
-  let type = props.type;
+  //build out the content in two columns, and render through looping all the items
   return (
     <div className="strokes-content-main">
       <div className="strokes-content-img">
@@ -391,6 +400,7 @@ function StrokesContent(props) {
                   props.type
                 } stroke`;
           return (
+            //rendering the images with absolute position
             <img
               src={`${process.env.PUBLIC_URL}/stroke-animations/${props.type}/${img}.png`}
               className={`img-${props.type}-${idx}`}
@@ -404,6 +414,7 @@ function StrokesContent(props) {
       </div>
       <div className="strokes-content-txt" id="main-specifics-content">
         {STROKE_TEXTS[props.type].map((content, idx) => {
+          //rendering the text with normal scrolling
           return (
             <div className={`stroke-text`} key={idx}>
               <h1 className={`main-title txt-${props.type}-${idx}`}>
@@ -419,9 +430,11 @@ function StrokesContent(props) {
   );
 }
 
+//component that dynamically renderes the page based on the provided type
 class StrokePage extends Component {
   constructor(props) {
     super(props);
+    //keeps track of the order of the strokes in images
     this.numbers = {
       dian: [7, 6, 5, 4, 3, 2],
       gou: [7, 6, 5, 4, 3, 2],
@@ -434,7 +447,7 @@ class StrokePage extends Component {
     };
   }
   componentDidMount() {
-    // scroll to top
+    // scroll to top when page loads
     gsap.to(window, { duration: 1, scrollTo: { y: 0 } });
   }
   render() {

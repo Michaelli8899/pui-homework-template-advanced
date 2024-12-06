@@ -2,6 +2,7 @@ import gsap from "gsap";
 import { useGSAP } from "@gsap/react";
 
 const TextAnimation = () => {
+  // the text animation informations
   const img = [
     {
       src: `/text-img/0.png`,
@@ -55,7 +56,7 @@ const TextAnimation = () => {
           );
         })}
         <h2 className="secondary-title center">
-          This Shows The Character for “Fish”Across Time Periods
+          This Shows The Character for “Fish” Across Time Periods
         </h2>
       </div>
     </div>

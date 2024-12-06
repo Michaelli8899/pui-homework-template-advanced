@@ -3,6 +3,7 @@ import gsap from "gsap";
 import { useGSAP } from "@gsap/react";
 import React, { Component } from "react";
 
+//click to scroll to top of the page
 class ToTopButton extends Component {
   handleClick = () => {
     gsap.to(window, {

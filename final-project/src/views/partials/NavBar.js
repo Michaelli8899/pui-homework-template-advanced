@@ -1,6 +1,8 @@
 import React, { Component } from "react";
 import { Outlet, Link } from "react-router-dom";
 
+
+//navigation bar on every page
 class NavBar extends Component {
   constructor(props) {
     super(props);
@@ -10,10 +12,13 @@ class NavBar extends Component {
     };
   }
   render() {
+    //bold the current selected page
+    //check the page url to see if it is history or strokes
     const navBold =
       window.location.href.split("/")[3] == "history" ? "bold" : "";
     const strokeBold =
       window.location.href.split("/")[3] == "strokes" ? "bold" : "";
+    //set the state to bold the current element
     if (navBold != "") {
       this.state.navBold = "bold";
       this.state.strokeBold = "";
@@ -26,6 +31,7 @@ class NavBar extends Component {
         <nav className="nav-bar" role="navigation">
           <ul>
             <li
+            // change the state when the element is clicked
               className={`nav-item ${this.state.navBold}`}
               onClick={() => {
                 this.setState({ navBold: "bold", strokeBold: "" });
@@ -35,7 +41,9 @@ class NavBar extends Component {
                 History
               </Link>
             </li>
+            
             <li
+            // change the state when the element is clicked
               className={`nav-item ${this.state.strokeBold}`}
               onClick={() => {
                 this.setState({ navBold: "", strokeBold: "bold" });

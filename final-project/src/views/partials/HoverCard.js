@@ -1,3 +1,5 @@
+
+//card element
 function HoverCard(props) {
   return (
     <div className="hover-card">

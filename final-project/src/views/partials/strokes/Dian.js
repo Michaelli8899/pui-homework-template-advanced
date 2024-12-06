@@ -6,6 +6,7 @@ function SvgDian(props) {
   const [hovered, setHovered] = useState(false);
   return (
     <div className="stroke-part-main">
+      {/* render the information when the item is hovered */}
       {hovered && (
         <div className="stroke-part-name">
           <HoverCard
@@ -18,6 +19,7 @@ function SvgDian(props) {
       <svg
         xmlns="http://www.w3.org/2000/svg"
         fill="none"
+        // manually set the viewbox of the path to be outside the actual svg element
         viewBox="3300 0 3908 500"
         overflow="visible"
         {...props}

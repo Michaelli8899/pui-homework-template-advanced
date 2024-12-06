@@ -1,27 +1,24 @@
 import Button from "../partials/Button";
 import ToTopButton from "../partials/ToTopButton";
 
-import { useEffect } from "react";
-import { useLayoutEffect } from "react";
-import { Link, Outlet, useLocation, ScrollRestoration } from "react-router-dom";
-
-import { useRef } from "react";
 import gsap from "gsap";
 import { useGSAP } from "@gsap/react";
-import { ScrollTrigger } from "gsap/ScrollTrigger";
 
+
+// page with the specific information of each stroke broken up into sections
 function Specifics(props) {
   useGSAP(() => {
+    // scroll to top when page loads
     gsap.to(window, { duration: 0.1, scrollTo: 0 });
-    
+    // set an variable for length
     let length = 8;
-
+    // set the opacity of all images to 0
     for (let i = 1; i < length; i++) {
       gsap.to(`.img-specifics-${i}`, {
         opacity: 0,
       });
     }
-
+    //setting a function that creates a GSAP timeline triggered by the text element
     function createTimeline(idx, isAppear) {
       let tl;
       if (isAppear) {
@@ -31,7 +28,6 @@ function Specifics(props) {
             start: "top 90%",
             end: "end end",
             scrub: true,
-            // markers: true,
             toggleActions: "restart none none none",
             toggleClass: "show",
           },
@@ -43,13 +39,14 @@ function Specifics(props) {
             start: "top top",
             end: "40% top",
             scrub: true,
-            // markers: true,
             toggleActions: "restart none none pause",
           },
         });
       }
       return tl;
     }
+    // loop through all the images and execute the timeline for each image
+    // adjust the opacity of the image based on the scroll position
     for (let i = 0; i < length; i++) {
       createTimeline(i, true).fromTo(
         `.img-specifics-${i}`,
@@ -76,6 +73,7 @@ function Specifics(props) {
 
   return (
     <>
+    {/* basic information */}
       <ToTopButton />
       <div className="landing">
         <h1 className="main-title" id="yong-title">
@@ -91,10 +89,11 @@ function Specifics(props) {
           calligraphy because they encompass the basic brush techniques needed
           to write most Chinese characters.
         </p>
-
+        {/* two main columns, img and text inside specifics-main */}
         <div className="specifics-main">
           <div className="specifics-img">
             {props.info.map((stroke, idx) => {
+              //image with absolute position
               return (
                 <img
                   src={`${process.env.PUBLIC_URL}/strokes/${stroke.img}.png`}
@@ -108,6 +107,8 @@ function Specifics(props) {
           </div>
           <div className="specifics-txt">
             {props.info.map((stroke, idx) => {
+              //text scrolling normalling
+              //scroll of the text trigger the opacity of the images
               return (
                 <div
                   className={`specifics-content txt-specifics-${idx}`}

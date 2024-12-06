@@ -5,6 +5,8 @@ import Specifics from "./Specifics";
 import gsap from "gsap";
 import { useGSAP } from "@gsap/react";
 
+
+//data for the strokes
 const strokeInfo = [
   {
     name: "Dot Stroke",
@@ -71,7 +73,7 @@ const strokeInfo = [
     img: "wan",
   },
 ];
-
+//main page
 function HomePage() {
   useGSAP(() => {
     gsap.to(window, { duration: 1, scrollTo: { y: 0 } });
@@ -80,7 +82,6 @@ function HomePage() {
     <div>
       <main>
         <LandingPage />
-        {/* <div className="line"></div> */}
         <Specifics info={strokeInfo} />
       </main>
     </div>

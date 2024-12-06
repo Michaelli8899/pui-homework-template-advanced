@@ -12,6 +12,7 @@ import TextAnimation from "./TextAnimation";
 import ReadMore from "../partials/ReadMore";
 gsap.registerPlugin(useGSAP, ScrollTrigger);
 
+// main landing page
 const LandingPage = () => {
   return (
     <div className="landing">
@@ -28,16 +29,19 @@ const LandingPage = () => {
   );
 };
 
+// main page
 const HomePage = (props) => {
   useGSAP(() => {
-    // scroll to top
+    // scroll to top when page loads
     gsap.to(window, { duration: 1, scrollTo: { y: 0 } });
   });
   return (
     <div>
       <main>
+        {/* top half */}
         <LandingPage />
         <div id="timeline">
+          {/* timeline part */}
           <TimeLine timeline={props.timeline} />
         </div>
       </main>
