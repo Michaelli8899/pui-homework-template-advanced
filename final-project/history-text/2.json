@@ -1,36 +1,38 @@
-{"text": [
+{
+  "text": [
     {
-        "Title": "Dynasty: Qin 秦 (221–206 BCE)",
-        "content": "Script Name: Seal Script (篆书, Zhuànshū) was standardized during the Qin Dynasty under Emperor Qin Shi Huang. This script was used on official seals, inscriptions, and stone carvings. Seal Script marked a significant evolution towards a more standardized form of Chinese writing and laid the foundation for later scripts."
+      "title": "Dynasty: Qin 秦 (221–206 BCE)",
+      "content": "Script Name: Seal Script (篆书, Zhuànshū) was standardized during the Qin Dynasty under Emperor Qin Shi Huang. This script was used on official seals, inscriptions, and stone carvings. Seal Script marked a significant evolution towards a more standardized form of Chinese writing and laid the foundation for later scripts."
     },
     {
-        "title": "Key Characteristics",
-        "content": "Rounded and Curvilinear: Seal Script is characterized by smooth, flowing lines and rounded forms, making the characters appear more elegant and decorative compared to earlier scripts."
+      "title": "Key Characteristics",
+      "content": "Rounded and Curvilinear: Seal Script is characterized by smooth, flowing lines and rounded forms, making the characters appear more elegant and decorative compared to earlier scripts."
     },
     {
-        "content": "Symmetrical and Balanced: Each character is carefully structured, with symmetrical strokes and balanced proportions, giving it a sense of harmony and formality."
+      "content": "Symmetrical and Balanced: Each character is carefully structured, with symmetrical strokes and balanced proportions, giving it a sense of harmony and formality."
     },
     {
-        "content": "Uniform Stroke Thickness: Unlike later scripts, Seal Script maintains a consistent thickness in each stroke, which makes it ideal for carving into stone or metal."
+      "content": "Uniform Stroke Thickness: Unlike later scripts, Seal Script maintains a consistent thickness in each stroke, which makes it ideal for carving into stone or metal."
     },
     {
-        "title": "Character for Fish",
-        "content": "The character for fish (鱼, yú) in Seal Script represents an evolution from the earlier pictorial styles of Oracle Bone Script and Bronze Script to a more refined and decorative form. This stage of the script retained the recognizable features of a fish while adapting them into smooth, curvilinear shapes that emphasized symmetry and balance, making it suitable for carving on seals and stone inscriptions:"
+      "title": "Character for Fish",
+      "content": "The character for fish (鱼, yú) in Seal Script represents an evolution from the earlier pictorial styles of Oracle Bone Script and Bronze Script to a more refined and decorative form. This stage of the script retained the recognizable features of a fish while adapting them into smooth, curvilinear shapes that emphasized symmetry and balance, making it suitable for carving on seals and stone inscriptions:"
     },
     {
-        "title": "Body:",
-        "content": "The body is elongated and slender, with smooth curves and a vertically oriented, rounded shape that reflects the script's elegance."
+      "title": "Body:",
+      "content": "The body is elongated and slender, with smooth curves and a vertically oriented, rounded shape that reflects the script's elegance."
     },
     {
-        "title": "Tail:",
-        "content": "The tail is represented by a rounded, symmetrical shape with two small upward curves, adding a graceful finish."
+      "title": "Tail:",
+      "content": "The tail is represented by a rounded, symmetrical shape with two small upward curves, adding a graceful finish."
     },
     {
-        "title": "Fins:",
-        "content": "The fins are depicted as subtle, short curves on either side of the body, contributing to the balanced structure."
+      "title": "Fins:",
+      "content": "The fins are depicted as subtle, short curves on either side of the body, contributing to the balanced structure."
     },
     {
-        "title": "Head and Eye:",
-        "content": "The eye is a small dot near the top, incorporated seamlessly into the flowing form, adding to the unity and decorative quality of the character."
+      "title": "Head and Eye:",
+      "content": "The eye is a small dot near the top, incorporated seamlessly into the flowing form, adding to the unity and decorative quality of the character."
     }
-]}
+  ]
+}
