@@ -144,10 +144,10 @@
 }
 
 .specifics-img {
-    width: 50%;
-    height: 100%;
-    position: sticky;
-    top: 20vh;
+  width: 50%;
+  height: 100%;
+  position: sticky;
+  top: 20vh;
 }
 
 .specifics-img img {
@@ -159,9 +159,9 @@
   width: 50%;
 }
 
-.specifics-txt div{
-    margin-bottom: 50vh;
-    margin-top: 50vh;
+.specifics-txt div {
+  margin-bottom: 50vh;
+  margin-top: 50vh;
 }
 
 .specifics-main button {
@@ -194,18 +194,19 @@
     top: max(130px, 12vw);
   }
 
-  .specifics-main, .strokes-content-main{
+  .specifics-main,
+  .strokes-content-main {
     flex-direction: column;
   }
 
-  .specifics-img{
+  .specifics-img {
     width: 50%;
     margin-left: 20%;
     background-color: white;
     z-index: -1;
   }
 
-  .strokes-content-img{
+  .strokes-content-img {
     width: 50%;
     background-color: white;
     z-index: 100;
@@ -213,24 +214,28 @@
     top: 20vh;
   }
 
-  .specifics-txt, .strokes-content-txt{
+  .specifics-txt,
+  .strokes-content-txt {
     width: 100%;
   }
 
-  .specifics-content, .strokes{
+  .specifics-content,
+  .strokes {
     margin-top: 50vh;
     margin-bottom: 50vh;
   }
 
-  .specifics-content h1, .stroke-text h1 {
+  .specifics-content h1,
+  .stroke-text h1 {
     font-size: 25px;
   }
 
-  .specifics-content p, .stroke-text p {
+  .specifics-content p,
+  .stroke-text p {
     font-size: 15px;
   }
 
   .stroke-animation {
-    top: max(150px, 12vw)
+    top: max(150px, 12vw);
   }
 }

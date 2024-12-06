@@ -37,7 +37,7 @@ p {
   margin-top: 0;
 }
 
-.tertiary-text{
+.tertiary-text {
   font-size: 24px;
   font-weight: 200;
 }
@@ -120,8 +120,7 @@ li.nav-item {
   font-weight: 700;
 }
 
-
-.to-top{
+.to-top {
   position: fixed;
   bottom: 20px;
   right: 20px;
@@ -136,19 +135,17 @@ li.nav-item {
   cursor: pointer;
 }
 
-.to-top:hover{
+.to-top:hover {
   background-color: rgba(107, 107, 107, 0.8);
   color: rgb(255, 255, 255);
 }
 
-.to-top p{
+.to-top p {
   font-size: 1vw;
   font-weight: 100;
   color: rgb(0, 0, 0);
   margin-bottom: 10px;
 }
-
-
 
 .back-button {
   background-color: rgb(178, 178, 178);
@@ -170,8 +167,6 @@ li.nav-item {
   color: white;
 }
 
-
-
 @media (max-width: 800px) {
   .main-title {
     font-size: 200%;
@@ -182,13 +177,13 @@ li.nav-item {
     font-size: 24px;
   }
 
-  .back-button{
+  .back-button {
     width: 100px;
     height: 40px;
     font-size: 20px;
   }
 
-  .tertiary-text{
+  .tertiary-text {
     font-size: 18px;
     font-weight: 200;
   }
@@ -196,9 +191,7 @@ li.nav-item {
     /* background-color: rgb(244, 244, 244); */
     padding: 75px 5%;
   }
-
 }
-
 
 @media (max-width: 500px) {
   .main-title {
@@ -208,38 +201,35 @@ li.nav-item {
   .secondary-title {
     font-size: 18px;
   }
-  .to-top p{
+  .to-top p {
     display: none;
   }
 }
 
-@media(max-width: 400px){
-  .back-button{
+@media (max-width: 400px) {
+  .back-button {
     width: 100px;
     height: 40px;
     font-size: 20px;
   }
 
-  .tertiary-text{
+  .tertiary-text {
     font-size: 14px;
     font-weight: 200;
   }
 
-  .back-button{
+  .back-button {
     width: 40px;
     height: 20px;
     font-size: 10px;
   }
-
 }
 
 @media (max-width: 380px) {
   .main-title {
     font-size: 100%;
   }
-
 }
-
 
 @font-face {
   font-family: "Cormorant";

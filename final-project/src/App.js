@@ -26,48 +26,48 @@ const timeline = [
     src: `/text-img/1.png`,
     alt: "bronze inscription for fish",
     name: "Bronze Inscription",
-    chinese: ["金", "文", "\u00A0"],
-    pinyin: ["jin", "wen", "\u00A0"],
+    chinese: ["金", "文", "_"],
+    pinyin: ["jin", "wen", "_"],
     timeframe: "11th Century - 771 BCE",
   },
   {
     src: `/text-img/2.png`,
     alt: "seal script for fish",
     name: "Seal Script",
-    chinese: ["篆", "书", "\u00A0"],
-    pinyin: ["zhuan", "shu", "\u00A0"],
+    chinese: ["篆", "书", "_"],
+    pinyin: ["zhuan", "shu", "_"],
     timeframe: "771 BCE - 221 BCE",
   },
   {
     src: `/text-img/3.png`,
     alt: "clerical script for fish",
     name: "Clerical Script",
-    chinese: ["隶", "书", "\u00A0"],
-    pinyin: ["li", "shu", "\u00A0"],
+    chinese: ["隶", "书", "_"],
+    pinyin: ["li", "shu", "_"],
     timeframe: "206 BCE - 220 CE",
   },
   {
     src: `/text-img/4.png`,
     alt: "cursive script for fish",
     name: "Cursive Script",
-    chinese: ["草", "书", "\u00A0"],
-    pinyin: ["cao", "shu", "\u00A0"],
+    chinese: ["草", "书", "_"],
+    pinyin: ["cao", "shu", "_"],
     timeframe: "206 BCE - 220 CE",
   },
   {
     src: `/text-img/5.png`,
     alt: "running script for fish",
     name: "Running Script",
-    chinese: ["行", "书", "\u00A0"],
-    pinyin: ["xing", "shu", "\u00A0"],
+    chinese: ["行", "书", "_"],
+    pinyin: ["xing", "shu", "_"],
     timeframe: "220 CE - 618 CE",
   },
   {
     src: `/text-img/6.png`,
     alt: "regular script for fish",
     name: "Regular Script",
-    chinese: ["楷", "书", "\u00A0"],
-    pinyin: ["kai", "shu", "\u00A0"],
+    chinese: ["楷", "书", "_"],
+    pinyin: ["kai", "shu", "_"],
     timeframe: "220 CE - 618 CE",
   },
 ];
@@ -83,7 +83,9 @@ function App() {
           path="/pui-homework-template-advanced/final-project"
           element={<History timeline={timeline} />}
         />
-        <Route path="/" element={<History timeline={timeline} />} />
+        <Route path="/" 
+        element={<History timeline={timeline} />} 
+        />
         <Route path="/history" element={<History timeline={timeline} />} />
         <Route
           path="/history/timeline"

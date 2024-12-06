@@ -18,12 +18,10 @@ class ReadMore extends Component {
   render() {
     return (
       <div className="read-more">
-        <p className="center">{this.props.content}</p>
+        <h3 className="center">{this.props.content}</h3>
         {/* <a href={this.props.link} className="center"> */}
         <div className="circle center" onClick={() => this.handleScrollTo()}>
-          <p>
-            <i className={`arrow ${this.props.direction}`}></i>
-          </p>
+          <i className={`arrow ${this.props.direction}`}></i>
         </div>
         {/* </a> */}
       </div>

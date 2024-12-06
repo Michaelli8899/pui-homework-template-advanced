@@ -3,7 +3,7 @@
   top: 0;
   height: 100%;
   width: 3px;
-  background-color: rgb(86, 86, 86);
+  background-color: rgb(86, 86, 86, 0);
   margin-left: 5%;
   padding-top: 100px;
 }
@@ -12,7 +12,7 @@
   margin: 0 20px;
 }
 
-.history-detail-side-bar{
+.history-detail-side-bar {
   margin-left: -30px;
   display: flex;
   flex-direction: column;
@@ -27,10 +27,11 @@
   width: 200px;
   align-items: start;
   cursor: pointer;
+  width: 500px;
 }
 
 .side-bar-small-title {
-  font-size: 2vh;
+  font-size: 2.5vh;
   margin-bottom: 0px;
   margin-top: 0px;
 }
@@ -40,7 +41,7 @@
 }
 
 .side-bar-large-title {
-  font-size: 3.5vh;
+  font-size: 3vh;
   margin-bottom: 0px;
   margin-top: 0px;
 }
@@ -90,7 +91,7 @@
   justify-content: center;
 }
 
-.chunk{
+.chunk {
   margin-top: 45vh;
   margin-bottom: 45vh;
 }
@@ -108,7 +109,7 @@
     display: block;
   }
 
-  .side-bar{
+  .side-bar {
     display: none;
   }
 
@@ -138,7 +139,7 @@
     gap: 2%;
   }
 
-  .side-bar-chinese{
+  .side-bar-chinese {
     align-items: baseline;
   }
 
@@ -148,13 +149,13 @@
   }
 }
 
-@media (max-width: 400px){
-
-  .history-detail-side-bar, .full-side-bar {
+@media (max-width: 400px) {
+  .history-detail-side-bar,
+  .full-side-bar {
     background-color: white;
   }
-  
-  .side-bar-large{
+
+  .side-bar-large {
     background-color: white;
     padding: 10px;
     margin-left: -20px;
@@ -179,5 +180,4 @@
     font-size: 2.5vh;
     background-color: white;
   }
-
 }

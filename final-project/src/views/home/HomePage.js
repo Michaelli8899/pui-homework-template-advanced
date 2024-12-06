@@ -29,10 +29,10 @@ const LandingPage = () => {
 };
 
 const HomePage = (props) => {
-    useGSAP(() => {
-        // scroll to top
-        gsap.to(window, { duration: 1, scrollTo: { y: 0 } });
-    });
+  useGSAP(() => {
+    // scroll to top
+    gsap.to(window, { duration: 1, scrollTo: { y: 0 } });
+  });
   return (
     <div>
       <main>

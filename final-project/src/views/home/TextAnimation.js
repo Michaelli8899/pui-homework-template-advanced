@@ -41,23 +41,23 @@ const TextAnimation = () => {
   ];
 
   return (
-    <div className = 'flex-center'>
-        <div className="text-animation">
+    <div className="flex-center">
+      <div className="text-animation">
         {img.map((img, idx) => {
-            return (
+          return (
             <img
-                src={`${process.env.PUBLIC_URL}${img.src}`}
-                alt={img.alt}
-                className={`img${idx}`}
-                width="35%"
-                key={idx}
+              src={`${process.env.PUBLIC_URL}${img.src}`}
+              alt={img.alt}
+              className={`img${idx}`}
+              width="35%"
+              key={idx}
             />
-            );
+          );
         })}
         <h2 className="secondary-title center">
-            This Shows The Character for “Fish”Across Time Periods
+          This Shows The Character for “Fish”Across Time Periods
         </h2>
-        </div>
+      </div>
     </div>
   );
 };
