@@ -71,22 +71,22 @@ The website is for anyone curious about Chinese culture or calligraphy, whether 
 
 GSAP provides a lot of built-in functions that support scroll animation. It allows me to add scroll animation to my website, which is an integral part of the experience. GSAP provides  precise control over animations and has better performance compared to many other JavaScript animation libraries.
 
-**How you used it?**
+**How did you use it?**
 
 I used GSAP to create smooth scrolling animations that allow the image to remain static while scrolling the text through the page.
 
 **What does it add to your website?**
 
-It adds the ability to create scroll animations that makes the website more engaging and interesting to navigate through. 
+It adds the ability to create scroll animations that make the website more engaging and interesting to navigate through. 
 
 ### React Router
 **Why did you choose to use it over other alternatives?**
 
 React Router is the most popular routing solution for React, making it a reliable and well-documented choice.
 
-**How you used it?**
+**How did you use it?**
 
-I used React Router to create different routes for each major section of the website, the router is set in App.js that directs to different React files
+I used React Router to create different routes for each major section of the website; the router is set in App.js that directs to different React files.
 
 **What does it add to your website?**
 
@@ -97,43 +97,76 @@ It provides an intuitive way to simulate the <a></a> tag in regular HTML to achi
 
 Framer Motion integrates really well with React and offers an easy way to create interactive animations without complicated coding.
 
-**How you used it?**
+**How did you use it?**
 
-I mainly used framer motion to add hover animations for the timeperiod cards that increases their size when hovering
+I mainly used framer motion to add hover animations for the time period cards that increase their size when hovering.
 
 **What does it add to your website?**
 
-It add more micro-interactions to the websites, making the website seem more professional and engaging.
+It adds more micro-interactions to the websites, making the website seem more professional and engaging.
 
 
 ## Part 4: Design Iteration
 
-Adjust the formatting of the timeperiod card into individual cards instead of a timeline of cards for better responsive structure. This allow the page to maintain similar structure when it’s in 2 or more rows and not restricted to the horizontal timeline structure 
+Adjust the formatting of the time period card into individual cards instead of a timeline of cards for a better responsive structure. This allows the page to maintaina  similar structure when it’s in 2 or more rows and not restricted to the horizontal timeline structu.re 
 
 Changed the design of the sidebar in the history detail page so have a changing topic on top and a short line indicating progress. The vertical line was distracting and was providing an unnecessary element on the webpage. This also makes sure the sidebar isn’t constantly changing it’s shape and makes it more accessible for users.
 
-Switching the grey background and font color for some images and text  for accessibility issues related to contrast, such as the individual stroke component images. This is to make sure the page is in accordance with WAVE standards
+Switching the grey background and font color for some images and text  for accessibility issues related to contrast, such as the individual stroke component images. This is to make sure the page is in accordance with WAVE standards.
 
-Removing some distracting elements such as the rocks in the stroke page which I found unnecessary to the page. This eliminates unnecessary animation that is not related to the topic and makes the page more accessible to users
+Removing some distracting elements, such as the rocks in the stroke page, which I found unnecessary to the page. This eliminates unnecessary animation that is not related to the topic and makes the page more accessible to the users
 
 ## Part 5: Implementation Challenges
 ### Implementing hover effect for irregular svg elements
-One of the main difficulties I’ve experienced was trying to add hover effects to irregular shaped strokes. The svg elements on their own have a rectangular hover zone, which would overlap with other elements and lead to poor user experience. 
+One of the main difficulties I’ve experienced was trying to add hover effects to irregularly shaped strokes. The SVG elements on their own have a rectangular hover zone, which would overlap with other elements and lead to a poor user experience. 
 
 ### Static Scrolling
-Another one of the main challenges would be to implement the scrolling animation on almost all of the pages that I  implemented with the GSAP library. I had no prior experience with the GSAP library and I took extensive time understanding the documentations and functions to implement scroll animations.    
+Another one of the main challenges would be to implement the scrolling animation on almost all of the pages that I  implemented with the GSAP library. I had no prior experience with the GSAP library, and I took extensive time to understand the documentation and functions to implement scroll animations.    
 
 
 ## Part 6: Generative AI Use
 I used two main GenAI tools, chatGPT and GitHub copilot. 
 
-For ChatGPT, I’ve maily used it to help me debug errors or when I’m stuck and can’t find the solution through any of the documentation online. One of the main strategies I used was to include the context and the error and have it provide me with multiple ideas of what the potential error and solution are. Then, I tested out each of the potential solutions and used it as the base point to further analyze the solution. For example, ChatGPT would be able to quickly notice simple errors, such as something is not properly defined or simple typos that the IDE can’t mark out. One challenge of using ChatGPT to debug is that ChatGPT sometimes can’t produce the correct code, but they will have an idea of what the problem is. Thus, it would be important to have a good understanding of the code itself and what the errors actually mean to piece through the different baselines given by ChatGPT to track down the real problem and refactor the code given by GPT to make it work. There isn’t a specific part of the codebase that was generated by chatGPT, as I have to refactor many parts of the code given by chatGPT.
+For ChatGPT, I’ve maily used it to help me debug errors or when I’m stuck and can’t find the solution through any of the documentation online. One of the main strategies I used was to include the context and the error and have it provide me with multiple ideas of what the potential error and solution are. Then, I tested out each of the potential solutions and used it as the base point to analyze the solution further. For example, ChatGPT would be able to quickly notice simple errors, such as something is not properly defined or simple typos that the IDE can’t mark out. One challenge of using ChatGPT to debug is that ChatGPT sometimes can’t produce the correct code, but they will have an idea of what the problem is. Thus, it would be important to have a good understanding of the code itself and what the errors actually mean to piece through the different baselines given by ChatGPT to track down the real problem and refactor the code given by GPT to make it work. There isn’t a specific part of the codebase that was generated by chatGPT, as I have to refactor many parts of the code given by chatGPT.
 
 Another application of ChatGPT I’ve used is to generate repetitive content that’s needed for the website. For example, I have to put the information in a specific JSON format to display on the website, and I would use chatGPT to generate the repetitive javascript object code. However, because chatGPT is incapable of actually understanding the output, it would be hard to get the JSON in the specific format needed, so I’ll have to edit each file output into the desired format. Although it still involves a lot of manual work, it has helped save a lot of time.
 
 Further, I’ve used GitHub copilot extensively throughout this project to help me with coding. The main use of GitHub Copilot is to help me autocomplete lines of code that I was going to write anyway/.
 
-When autocompleting code, the copilot looks at code I wrote and will predict what I want to write, this helps save a lot of time in writing up repetitive code, such as completing the code for a for loop, setting up if statements, and any type of code that has been written repeatedly. However, the autocomplete of copilot is not always accurate, so I would have to have a very good understanding of what I’m going to write to be able to accept code from GitHub, which means it can’t be a replacement for coming up with code, it can only speed up the process. Further, copilot would occasionally makeup plausible but inaccurate variable names that will result in errors, thus it would be important to have a good understanding of the codebase in general to actually use the tool.
+When autocompleting code, the copilot looks at the code I wrote and will predict what I want to write; this helps save a lot of time in writing up repetitive code, such as completing the code for a for loop, setting up if statements, and any type of code that has been written repeatedly. However, the autocomplete of copilot is not always accurate, so I would have to have a very good understanding of what I’m going to write to be able to accept code from GitHub, which means it can’t be a replacement for coming up with code, it can only speed up the process. Further, copilot would occasionally makeup plausible but inaccurate variable names that will result in errors, thus it would be important to have a good understanding of the codebase in general to actually use the tool.
+
+## WAVE Evaluation
+!IMPORTANT: Because of how React Router is configured, it is not supported by the WAVE tool. Thus, the following screenshots are taken by adjusting the element that is rendered through the main URL in the main App.js and redeploying each time the element is switched out.
+As shown in the image below, the actual element is commented out and replaced with the element that I want to test with the WAVE tool. 
+<img width="767" alt="image" src="https://github.com/user-attachments/assets/f3ac1310-dbb1-4913-bd5c-575f945dbc4f">
+
+
+### History Landing Page
+#### Summary
+![image](https://github.com/user-attachments/assets/73c3fd9b-6636-493b-a1e7-a7e37a37099f)
+#### Details
+![image](https://github.com/user-attachments/assets/be6a03ee-cd52-4b8c-8764-79220c55ca5b)
+![image](https://github.com/user-attachments/assets/31db50b2-f43f-4f07-8d89-97b510505617)
+
+### History Details Page
+### Summary
+![image](https://github.com/user-attachments/assets/94c8beff-a30f-47f1-93d0-d8fedd22e2c6)
+### Detail
+![image](https://github.com/user-attachments/assets/f9a27517-d742-4ecb-8bc8-656cb1963395)
+
+### Strokes Landing Page
+### Summary
+![image](https://github.com/user-attachments/assets/d1522618-ab52-4a6c-877f-b2a126f7afcb)
+### Detail
+![image](https://github.com/user-attachments/assets/67cbce5b-b3a0-4c90-953a-384f0f0578ba)
+
+### Stroke Detail Page
+Because all the strokes page uses the same .js file, it should reproduce the same outcome. This is using the dian details page as an example for all detail pages
+### Summary
+![image](https://github.com/user-attachments/assets/b691913e-ab4c-4f2e-9ad6-8b65a723d89c)
+### Detail
+![image](https://github.com/user-attachments/assets/3a4400a2-99ea-43f3-aab5-393e0821bcef)
+
 
 # FP2 - Evaluation of the Final project
 
