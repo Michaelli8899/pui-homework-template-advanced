@@ -1,5 +1,100 @@
 # FP4 - Final Project Writeup
 
+Part 1: Website Description
+The purpose of my calligraphy website is to share the beauty of Chinese calligraphy and help people understand the Chinese written language, which is such an important part of my culture. I want to make calligraphy interesting and show why it's still meaningful today. By highlighting both the art and the history of Chinese characters, I hope the website can help people appreciate my culture in a modern context.
+
+The website has two main sections: the history of the development of Chinese characters and the fundamental strokes used in calligraphy. The history page explores the evolution of Chinese characters over seven distinct phases using the fish character "鱼" as an example. Each phase discusses key characteristics and provides a detailed study of the fish character, offering insight into the fascinating journey of Chinese script through time.
+
+The strokes section introduces the basic building blocks of calligraphy: the eight fundamental strokes from the Principles of Yong that make up every character. These fundamental elements are essential for anyone interested in mastering Chinese calligraphy. This information is designed to be useful for everyone, whether you're just starting out or already have some familiarity with calligraphy.
+
+To make the learning process engaging, I've added animations that bring the strokes and historical elements to life, making the experience more dynamic for users. The content is broken into small, easy-to-understand sections, ensuring it remains accessible without feeling overwhelming. The website is designed to make learning enjoyable and straightforward, regardless of your level of experience.
+
+The website is for anyone curious about Chinese culture or calligraphy, whether you're just starting out or looking to deepen your appreciation. Through this project, I want to foster a deeper understanding of this fundamental element of Chinese culture, making it accessible to a broader audience while celebrating its cultural significance.
+Part 2: User Interaction
+History Homepage
+Click to Scroll Down
+Interaction Type: Click and Scroll
+How: Click on the "Scroll to Read More" button at the bottom of the text.
+Select Time Period Card
+Interaction Type: Click
+How: Click on a time period card to be redirected to the history detail page and scroll to the respective section.
+Hover over Time Period Card
+Interaction Type: Hover and Size Change
+How: Hover over a time period card to increase its size and indicate a hover state.
+History Detail Page
+Scroll to Observe Changes
+Interaction Type: Scrolling and Animation
+How: Scroll on the page to see changes in the sidebar and graphics.
+Click on Sidebar
+Interaction Type: Click and Scroll
+How: Click on the sidebar text to scroll to the respective section.
+Back Button
+Interaction Type: Button Click
+How: Click on the back button to return to the homepage.
+Stroke Homepage
+Click to Scroll Down
+Interaction Type: Click and Scroll
+How: Click on the text in the sidebar to scroll to the respective section.
+Hover Over Individual Strokes
+Interaction Type: Hover
+How: Hover over any stroke to reveal a darker shade and display a card with a short description.
+Click on Individual Strokes
+Interaction Type: Click and Redirect
+How: Click on the stroke while hovering to be redirected to the details page.
+Scroll Down to View Stroke Details and Animation
+Interaction Type: Scroll Animation
+How: Scroll down to view stroke animations.
+Click Back to Top
+Interaction Type: Button Click
+How: Click the "Back to Top" button in the right-hand corner to scroll back to the top.
+Stroke Detail Page
+Click to Scroll Down
+Interaction Type: Click and Scroll
+How: Click on the text in the sidebar to scroll to the respective section.
+Scroll and Play Stroke Animation
+Interaction Type: Scroll Animation
+How: Scroll down to view alternating stroke animations.
+Click Back to Top
+Interaction Type: Button Click
+How: Click the "Back to Top" button in the right-hand corner to return to the top.
+Back Button
+Interaction Type: Button Click
+How: Click the back button to return to the homepage.
+Part 3: External Tools
+GSAP Library
+Why Chosen: GSAP provides a lot of built-in functions that support scroll animation, allowing precise control over animations with better performance compared to other JavaScript animation libraries.
+Usage: Used GSAP to create smooth scrolling animations that allow images to remain static while scrolling text.
+Contribution: Adds engaging scroll animations, making navigation interesting.
+React Router
+Why Chosen: React Router is the most popular routing solution for React, making it reliable and well-documented.
+Usage: Used to create different routes for each major section of the website, defined in App.js.
+Contribution: Provides an intuitive multi-page experience by simulating the HTML <a> tag.
+Framer Motion
+Why Chosen: Framer Motion integrates well with React, offering easy interactive animations without complicated coding.
+Usage: Used for hover animations on time period cards to increase their size.
+Contribution: Adds micro-interactions, making the website feel professional and engaging.
+Part 4: Design Iteration
+Reformatted the time period card into individual cards for better responsiveness, allowing the page to maintain a consistent structure across multiple rows.
+
+Redesigned the sidebar in the history detail page to feature a changing topic on top and a short progress line, removing the distracting vertical line for improved accessibility.
+
+Adjusted the background and font colors for images and text to meet accessibility standards, such as WAVE, ensuring appropriate contrast.
+
+Removed unnecessary elements, like rocks on the stroke page, to eliminate unrelated animations and make the page more accessible.
+Part 5: Implementation Challenges
+Implementing Hover Effect for Irregular SVG Elements
+Adding hover effects to irregularly shaped SVG elements was challenging as their rectangular hover zones overlapped with other elements, resulting in a poor user experience.
+Static Scrolling
+Implementing scrolling animations across multiple pages using the GSAP library was challenging due to my lack of experience. It required extensive time to understand the library documentation and functionality.
+Part 6: Generative AI Use
+I used two main GenAI tools: ChatGPT and GitHub Copilot.
+
+ChatGPT primarily assisted me in debugging errors or finding solutions when I was unable to resolve issues through documentation. I provided context and error messages, which ChatGPT used to offer potential solutions. I tested these solutions as starting points for further analysis. For example, ChatGPT helped identify simple errors such as undefined variables or typos that the IDE missed. However, ChatGPT's responses were not always accurate, which required me to have a solid understanding of the codebase to refine and adapt the provided suggestions.
+
+I also used ChatGPT to generate repetitive content, such as JSON data required for the website. While ChatGPT couldn't always generate the exact format needed, it reduced manual work significantly, allowing me to focus on refining the content.
+
+GitHub Copilot was another tool I used extensively throughout the project, primarily for code autocompletion. It helped autocomplete lines of code, saving time when writing repetitive code such as loops, conditionals, and boilerplate code. While Copilot improved efficiency, it wasn't always accurate, often creating plausible but incorrect variable names, emphasizing the importance of a thorough understanding of the codebase to ensure accuracy.
+
 # FP2 - Evaluation of the Final project
 
 **Link to Prototype**: https://www.figma.com/proto/wu7bAm8R6dxzxucQQgZNI1/PUI-Final-Project?page-id=0%3A1&node-id=121-146&node-type=canvas&viewport=-3194%2C1091%2C0.33&t=KtIxrg2pQI8YIk3A-1&scaling=scale-down&content-scaling=fixed&starting-point-node-id=121%3A146&show-proto-sidebar=1
