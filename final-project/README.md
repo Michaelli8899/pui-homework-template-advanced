@@ -1,6 +1,6 @@
 # FP4 - Final Project Writeup
 
-Part 1: Website Description
+## Part 1: Website Description
 The purpose of my calligraphy website is to share the beauty of Chinese calligraphy and help people understand the Chinese written language, which is such an important part of my culture. I want to make calligraphy interesting and show why it's still meaningful today. By highlighting both the art and the history of Chinese characters, I hope the website can help people appreciate my culture in a modern context.
 
 The website has two main sections: the history of the development of Chinese characters and the fundamental strokes used in calligraphy. The history page explores the evolution of Chinese characters over seven distinct phases using the fish character "鱼" as an example. Each phase discusses key characteristics and provides a detailed study of the fish character, offering insight into the fascinating journey of Chinese script through time.
@@ -10,90 +10,130 @@ The strokes section introduces the basic building blocks of calligraphy: the eig
 To make the learning process engaging, I've added animations that bring the strokes and historical elements to life, making the experience more dynamic for users. The content is broken into small, easy-to-understand sections, ensuring it remains accessible without feeling overwhelming. The website is designed to make learning enjoyable and straightforward, regardless of your level of experience.
 
 The website is for anyone curious about Chinese culture or calligraphy, whether you're just starting out or looking to deepen your appreciation. Through this project, I want to foster a deeper understanding of this fundamental element of Chinese culture, making it accessible to a broader audience while celebrating its cultural significance.
-Part 2: User Interaction
-History Homepage
-Click to Scroll Down
-Interaction Type: Click and Scroll
-How: Click on the "Scroll to Read More" button at the bottom of the text.
-Select Time Period Card
-Interaction Type: Click
-How: Click on a time period card to be redirected to the history detail page and scroll to the respective section.
-Hover over Time Period Card
-Interaction Type: Hover and Size Change
-How: Hover over a time period card to increase its size and indicate a hover state.
-History Detail Page
-Scroll to Observe Changes
-Interaction Type: Scrolling and Animation
-How: Scroll on the page to see changes in the sidebar and graphics.
-Click on Sidebar
-Interaction Type: Click and Scroll
-How: Click on the sidebar text to scroll to the respective section.
-Back Button
-Interaction Type: Button Click
-How: Click on the back button to return to the homepage.
-Stroke Homepage
-Click to Scroll Down
-Interaction Type: Click and Scroll
-How: Click on the text in the sidebar to scroll to the respective section.
-Hover Over Individual Strokes
-Interaction Type: Hover
-How: Hover over any stroke to reveal a darker shade and display a card with a short description.
-Click on Individual Strokes
-Interaction Type: Click and Redirect
-How: Click on the stroke while hovering to be redirected to the details page.
-Scroll Down to View Stroke Details and Animation
-Interaction Type: Scroll Animation
-How: Scroll down to view stroke animations.
-Click Back to Top
-Interaction Type: Button Click
-How: Click the "Back to Top" button in the right-hand corner to scroll back to the top.
-Stroke Detail Page
-Click to Scroll Down
-Interaction Type: Click and Scroll
-How: Click on the text in the sidebar to scroll to the respective section.
-Scroll and Play Stroke Animation
-Interaction Type: Scroll Animation
-How: Scroll down to view alternating stroke animations.
-Click Back to Top
-Interaction Type: Button Click
-How: Click the "Back to Top" button in the right-hand corner to return to the top.
-Back Button
-Interaction Type: Button Click
-How: Click the back button to return to the homepage.
-Part 3: External Tools
-GSAP Library
-Why Chosen: GSAP provides a lot of built-in functions that support scroll animation, allowing precise control over animations with better performance compared to other JavaScript animation libraries.
-Usage: Used GSAP to create smooth scrolling animations that allow images to remain static while scrolling text.
-Contribution: Adds engaging scroll animations, making navigation interesting.
-React Router
-Why Chosen: React Router is the most popular routing solution for React, making it reliable and well-documented.
-Usage: Used to create different routes for each major section of the website, defined in App.js.
-Contribution: Provides an intuitive multi-page experience by simulating the HTML <a> tag.
-Framer Motion
-Why Chosen: Framer Motion integrates well with React, offering easy interactive animations without complicated coding.
-Usage: Used for hover animations on time period cards to increase their size.
-Contribution: Adds micro-interactions, making the website feel professional and engaging.
-Part 4: Design Iteration
-Reformatted the time period card into individual cards for better responsiveness, allowing the page to maintain a consistent structure across multiple rows.
 
-Redesigned the sidebar in the history detail page to feature a changing topic on top and a short progress line, removing the distracting vertical line for improved accessibility.
+## Part 2: User Interaction
+### History Homepage
+* Click to Scroll Down
+  * Interaction Type: Click and Scroll
+  * How: Click on the "Scroll to Read More" button at the bottom of the text.
+* Select Time Period Card
+  * Interaction Type: Click
+  * How: Click on a time period card to be redirected to the history detail page and scroll to the respective section.
+* Hover over Time Period Card
+  * Interaction Type: Hover and Size Change
+  * How: Hover over a time period card to increase its size and indicate a hover state.
 
-Adjusted the background and font colors for images and text to meet accessibility standards, such as WAVE, ensuring appropriate contrast.
+### History Detail Page
+* Scroll to Observe Changes
+  * Interaction Type: Scrolling and Animation
+  * How: Scroll on the page to see changes in the sidebar and graphics.
+* Click on Sidebar
+  * Interaction Type: Click and Scroll
+  * How: Click on the sidebar text to scroll to the respective section.
+* Back Button
+  * Interaction Type: Button Click
+  * How: Click on the back button to return to the homepage.
 
-Removed unnecessary elements, like rocks on the stroke page, to eliminate unrelated animations and make the page more accessible.
-Part 5: Implementation Challenges
-Implementing Hover Effect for Irregular SVG Elements
-Adding hover effects to irregularly shaped SVG elements was challenging as their rectangular hover zones overlapped with other elements, resulting in a poor user experience.
-Static Scrolling
-Implementing scrolling animations across multiple pages using the GSAP library was challenging due to my lack of experience. It required extensive time to understand the library documentation and functionality.
-Part 6: Generative AI Use
-I used two main GenAI tools: ChatGPT and GitHub Copilot.
+### Stroke Homepage
+* Click to Scroll Down
+  * Interaction Type: Click and Scroll
+  * How: Click on the text in the sidebar to scroll to the respective section.
+* Hover Over Individual Strokes
+  * Interaction Type: Hover
+  * How: Hover over any stroke to reveal a darker shade and display a card with a short description.
+* Click on Individual Strokes
+  * Interaction Type: Click and Redirect
+  * How: Click on the stroke while hovering to be redirected to the details page.
+* Scroll Down to View Stroke Details and Animation
+  * Interaction Type: Scroll Animation
+  * How: Scroll down to view stroke animations.
+* Click Back to Top
+  * Interaction Type: Button Click
+  * How: Click the "Back to Top" button in the right-hand corner to scroll back to the top.
 
-ChatGPT primarily assisted me in debugging errors or finding solutions when I was unable to resolve issues through documentation. I provided context and error messages, which ChatGPT used to offer potential solutions. I tested these solutions as starting points for further analysis. For example, ChatGPT helped identify simple errors such as undefined variables or typos that the IDE missed. However, ChatGPT's responses were not always accurate, which required me to have a solid understanding of the codebase to refine and adapt the provided suggestions.
+### Stroke Detail Page
+* Click to Scroll Down
+  * Interaction Type: Click and Scroll
+  * How: Click on the text in the sidebar to scroll to the respective section.
+* Scroll and Play Stroke Animation
+  * Interaction Type: Scroll Animation
+  * How: Scroll down to view alternating stroke animations.
+* Click Back to Top
+  * Interaction Type: Button Click
+  * How: Click the "Back to Top" button in the right-hand corner to return to the top.
+* Back Button
+  * Interaction Type: Button Click
+  * How: Click the back button to return to the homepage.
 
-I also used ChatGPT to generate repetitive content, such as JSON data required for the website. While ChatGPT couldn't always generate the exact format needed, it reduced manual work significantly, allowing me to focus on refining the content.
+## Part 3: External Tools
+### GSAP Library
+**Why did you choose to use it over other alternatives?**
 
-GitHub Copilot was another tool I used extensively throughout the project, primarily for code autocompletion. It helped autocomplete lines of code, saving time when writing repetitive code such as loops, conditionals, and boilerplate code. While Copilot improved efficiency, it wasn't always accurate, often creating plausible but incorrect variable names, emphasizing the importance of a thorough understanding of the codebase to ensure accuracy.
+GSAP provides a lot of built-in functions that support scroll animation. It allows me to add scroll animation to my website, which is an integral part of the experience. GSAP provides  precise control over animations and has better performance compared to many other JavaScript animation libraries.
+
+**How you used it?**
+
+I used GSAP to create smooth scrolling animations that allow the image to remain static while scrolling the text through the page.
+
+**What does it add to your website?**
+
+It adds the ability to create scroll animations that makes the website more engaging and interesting to navigate through. 
+
+### React Router
+**Why did you choose to use it over other alternatives?**
+
+React Router is the most popular routing solution for React, making it a reliable and well-documented choice.
+
+**How you used it?**
+
+I used React Router to create different routes for each major section of the website, the router is set in App.js that directs to different React files
+
+**What does it add to your website?**
+
+It provides an intuitive way to simulate the <a></a> tag in regular HTML to achieve multiple pages for the website, allowing users to navigate between different pages of the website.
+
+### Framer Motion
+**Why did you choose to use it over other alternatives?**
+
+Framer Motion integrates really well with React and offers an easy way to create interactive animations without complicated coding.
+
+**How you used it?**
+
+I mainly used framer motion to add hover animations for the timeperiod cards that increases their size when hovering
+
+**What does it add to your website?**
+
+It add more micro-interactions to the websites, making the website seem more professional and engaging.
+
+
+## Part 4: Design Iteration
+
+Adjust the formatting of the timeperiod card into individual cards instead of a timeline of cards for better responsive structure. This allow the page to maintain similar structure when it’s in 2 or more rows and not restricted to the horizontal timeline structure 
+
+Changed the design of the sidebar in the history detail page so have a changing topic on top and a short line indicating progress. The vertical line was distracting and was providing an unnecessary element on the webpage. This also makes sure the sidebar isn’t constantly changing it’s shape and makes it more accessible for users.
+
+Switching the grey background and font color for some images and text  for accessibility issues related to contrast, such as the individual stroke component images. This is to make sure the page is in accordance with WAVE standards
+
+Removing some distracting elements such as the rocks in the stroke page which I found unnecessary to the page. This eliminates unnecessary animation that is not related to the topic and makes the page more accessible to users
+
+## Part 5: Implementation Challenges
+### Implementing hover effect for irregular svg elements
+One of the main difficulties I’ve experienced was trying to add hover effects to irregular shaped strokes. The svg elements on their own have a rectangular hover zone, which would overlap with other elements and lead to poor user experience. 
+
+### Static Scrolling
+Another one of the main challenges would be to implement the scrolling animation on almost all of the pages that I  implemented with the GSAP library. I had no prior experience with the GSAP library and I took extensive time understanding the documentations and functions to implement scroll animations.    
+
+
+## Part 6: Generative AI Use
+I used two main GenAI tools, chatGPT and GitHub copilot. 
+
+For ChatGPT, I’ve maily used it to help me debug errors or when I’m stuck and can’t find the solution through any of the documentation online. One of the main strategies I used was to include the context and the error and have it provide me with multiple ideas of what the potential error and solution are. Then, I tested out each of the potential solutions and used it as the base point to further analyze the solution. For example, ChatGPT would be able to quickly notice simple errors, such as something is not properly defined or simple typos that the IDE can’t mark out. One challenge of using ChatGPT to debug is that ChatGPT sometimes can’t produce the correct code, but they will have an idea of what the problem is. Thus, it would be important to have a good understanding of the code itself and what the errors actually mean to piece through the different baselines given by ChatGPT to track down the real problem and refactor the code given by GPT to make it work. There isn’t a specific part of the codebase that was generated by chatGPT, as I have to refactor many parts of the code given by chatGPT.
+
+Another application of ChatGPT I’ve used is to generate repetitive content that’s needed for the website. For example, I have to put the information in a specific JSON format to display on the website, and I would use chatGPT to generate the repetitive javascript object code. However, because chatGPT is incapable of actually understanding the output, it would be hard to get the JSON in the specific format needed, so I’ll have to edit each file output into the desired format. Although it still involves a lot of manual work, it has helped save a lot of time.
+
+Further, I’ve used GitHub copilot extensively throughout this project to help me with coding. The main use of GitHub Copilot is to help me autocomplete lines of code that I was going to write anyway/.
+
+When autocompleting code, the copilot looks at code I wrote and will predict what I want to write, this helps save a lot of time in writing up repetitive code, such as completing the code for a for loop, setting up if statements, and any type of code that has been written repeatedly. However, the autocomplete of copilot is not always accurate, so I would have to have a very good understanding of what I’m going to write to be able to accept code from GitHub, which means it can’t be a replacement for coming up with code, it can only speed up the process. Further, copilot would occasionally makeup plausible but inaccurate variable names that will result in errors, thus it would be important to have a good understanding of the codebase in general to actually use the tool.
 
 # FP2 - Evaluation of the Final project
 
