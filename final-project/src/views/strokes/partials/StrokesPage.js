@@ -418,7 +418,7 @@ function StrokesContent(props) {
           return (
             <div className={`stroke-text`} key={idx}>
               <h1 className={`main-title txt-${props.type}-${idx}`}>
-                <span className="chinese-char">{content.chinese}</span>
+                <span lang = 'zh' className="chinese-char">{content.chinese}</span>
                 {content.title}
               </h1>
               <p>{content.text}</p>
@@ -458,7 +458,7 @@ class StrokePage extends Component {
         <main className="landing">
           <BackButton link="strokes" />
           <h1 className="main-title margin-bottom-title">
-            <span className="chinese-char">{content.chinese}</span>
+            <span lang = 'zh' className="chinese-char">{content.chinese}</span>
             {content.title}
           </h1>
           <StrokeAnimation

@@ -28,11 +28,9 @@ function SvgWan(props) {
           <g
             className="stroke-part"
             onMouseEnter={() => {
-              console.log("enter");
               setHovered(true);
             }}
             onMouseLeave={() => {
-              console.log("leave");
               setHovered(false);
             }}
             transform="scale(0.5, 0.5)"

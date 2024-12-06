@@ -367,7 +367,7 @@ class SideBar extends Component {
           </h2>
           {THREE && (
             <h3
-              className={`${this.props.id} side-bar-small-title chinese-char`}
+              lang = 'zh' className={`${this.props.id} side-bar-small-title chinese-char`}
             >
               {this.props.chinese[0]}
               {this.props.chinese[1]}
@@ -376,7 +376,7 @@ class SideBar extends Component {
           )}
           {!THREE && (
             <h3
-              className={`${this.props.id} side-bar-small-title chinese-char`}
+            lang = 'zh' className={`${this.props.id} side-bar-small-title chinese-char`}
             >
               {this.props.chinese[0]}
               {this.props.chinese[1]}
@@ -399,6 +399,7 @@ class SideBar extends Component {
                   char === "_" ? { color: "rgb(0, 0, 0, 0)" } : {};
                 return (
                   <h1
+                    lang = 'zh' 
                     className="side-bar-large-title chinese-char"
                     key={idx}
                     style={display}
@@ -489,7 +490,6 @@ function HomePage(props) {
   useEffect(() => {
     // Scroll to the element with the ID from the fragment identifier
     if (location.hash) {
-      console.log(location.hash);
       const element = location.hash;
       gsap.to(window, { duration: 1, scrollTo: { y: element, offsetY: -50 } });
     }
