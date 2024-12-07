@@ -78,11 +78,11 @@ function Specifics(props) {
       <div className="landing">
         <h1 className="main-title" id="yong-title">
           Eight Principles of Yong{" "}
-          <span className="chinese-char">(永字八法)</span>
+          <span lang = 'zh' className="chinese-char">(永字八法)</span>
         </h1>
         <p className="tertiary-text">
           The Eight Principles of Yong{" "}
-          <span className="chinese-char">(永字八法)</span> is the fundamental
+          <span lang = 'zh' className="chinese-char">(永字八法)</span> is the fundamental
           brush strokes in Chinese calligraphy, all demonstrated in the single
           character 永 ("yǒng," meaning "eternity"). These eight strokes are
           considered the foundation for mastering various styles of Chinese
@@ -115,7 +115,7 @@ function Specifics(props) {
                   key={idx}
                 >
                   <h1 className="main-title">
-                    <span className="chinese-char">{stroke.chinese}</span>(
+                    <span lang = 'zh' className="chinese-char">{stroke.chinese}</span>(
                     {stroke.pinyin}) – {stroke.name}
                   </h1>
                   <p>{stroke.content}</p>

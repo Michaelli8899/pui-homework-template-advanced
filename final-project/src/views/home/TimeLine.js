@@ -35,7 +35,7 @@ class TimePeriodCard extends Component {
                 const display =
                   word === "_" ? { display: "none" } : {};
                 return (
-                  <h2 className="chinese-char" key={idx} style={display}>
+                  <h2 lang = 'zh' className="chinese-char" key={idx} style={display}>
                     {word}
                   </h2>
                 );
