@@ -2,6 +2,8 @@
 
 ## Part 1: Website Description
 ### Description
+![image](https://github.com/user-attachments/assets/9f877a57-9a71-4a37-8795-90d72fd6142a)
+
 The purpose of my calligraphy website is to share the beauty of Chinese calligraphy and help people understand the Chinese written language, which is such an important part of my culture. I want to make calligraphy interesting and show why it's still meaningful today. By highlighting both the art and the history of Chinese characters, I hope the website can help people appreciate my culture in a modern context.
 
 The website has two main sections: the history of the development of Chinese characters and the fundamental strokes used in calligraphy. The history page explores the evolution of Chinese characters over seven distinct phases using the fish character "鱼" as an example. Each phase discusses key characteristics and provides a detailed study of the fish character, offering insight into the fascinating journey of Chinese script through time.
@@ -24,9 +26,14 @@ The website is for anyone curious about Chinese culture or calligraphy, whether 
 
 ## Part 2: User Interaction
 ### History Homepage
+![image](https://github.com/user-attachments/assets/da309a18-ee26-4f6e-9474-d0dd0a890c3e)
+
 * Click to Scroll Down
   * Interaction Type: Click and Scroll
   * How: Click on the "Scroll to Read More" button at the bottom of the text.
+
+![image](https://github.com/user-attachments/assets/3369af26-b713-4723-91e5-46e89c0e0d98)
+
 * Select Time Period Card
   * Interaction Type: Click
   * How: Click on a time period card to be redirected to the history detail page and scroll to the respective section.
@@ -35,43 +42,76 @@ The website is for anyone curious about Chinese culture or calligraphy, whether 
   * How: Hover over a time period card to increase its size and indicate a hover state.
 
 ### History Detail Page
+
+![image](https://github.com/user-attachments/assets/15f3b160-d631-41d5-aa35-6ef44ddf223a)
+
 * Scroll to Observe Changes
   * Interaction Type: Scrolling and Animation
   * How: Scroll on the page to see changes in the sidebar and graphics.
+
+![image](https://github.com/user-attachments/assets/903d4b9f-c395-4d76-94f7-aa31388c298d)
+
 * Click on Sidebar
   * Interaction Type: Click and Scroll
   * How: Click on the sidebar text to scroll to the respective section.
+
+![image](https://github.com/user-attachments/assets/1809e975-43e5-4ba5-abdb-2ce223bdc1c1)
+
 * Back Button
   * Interaction Type: Button Click
   * How: Click on the back button to return to the homepage.
 
 ### Stroke Homepage
+
+![image](https://github.com/user-attachments/assets/5e7d1904-217f-4fb4-92c3-85b3ad30331c)
+
 * Click to Scroll Down
   * Interaction Type: Click and Scroll
   * How: Click on the text in the sidebar to scroll to the respective section.
-* Hover Over Individual Strokes
-  * Interaction Type: Hover
-  * How: Hover over any stroke to reveal a darker shade and display a card with a short description.
 * Click on Individual Strokes
   * Interaction Type: Click and Redirect
   * How: Click on the stroke while hovering to be redirected to the details page.
+
+![image](https://github.com/user-attachments/assets/067f4bf4-62d9-4f7c-97fc-a9cda8b147cb)
+
+* Hover Over Individual Strokes
+  * Interaction Type: Hover
+  * How: Hover over any stroke to reveal a darker shade and display a card with a short description.
+
+![image](https://github.com/user-attachments/assets/393fb253-e193-4e0b-8246-e3b72ad729a7)
+
 * Scroll Down to View Stroke Details and Animation
   * Interaction Type: Scroll Animation
   * How: Scroll down to view stroke animations.
+ 
+![image](https://github.com/user-attachments/assets/7fb7930f-6a1e-4b1e-9d58-265a03624f17)
+
 * Click Back to Top
   * Interaction Type: Button Click
   * How: Click the "Back to Top" button in the right-hand corner to scroll back to the top.
 
 ### Stroke Detail Page
+
+![image](https://github.com/user-attachments/assets/130d8ae6-7d2f-4e81-b84b-bdfe9040c0b2)
+
 * Click to Scroll Down
   * Interaction Type: Click and Scroll
   * How: Click on the text in the sidebar to scroll to the respective section.
+
+![image](https://github.com/user-attachments/assets/0e9d2a8a-3562-491f-9f14-78d726d17926)
+
 * Scroll and Play Stroke Animation
   * Interaction Type: Scroll Animation
   * How: Scroll down to view alternating stroke animations.
+
+![image](https://github.com/user-attachments/assets/7fb7930f-6a1e-4b1e-9d58-265a03624f17)
+
 * Click Back to Top
   * Interaction Type: Button Click
   * How: Click the "Back to Top" button in the right-hand corner to return to the top.
+
+![image](https://github.com/user-attachments/assets/1809e975-43e5-4ba5-abdb-2ce223bdc1c1)
+
 * Back Button
   * Interaction Type: Button Click
   * How: Click the back button to return to the homepage.
@@ -118,14 +158,22 @@ It adds more micro-interactions to the websites, making the website seem more pr
 
 
 ## Part 4: Design Iteration
-
 Adjust the formatting of the time period card into individual cards instead of a timeline of cards for a better responsive structure. This allows the page to maintaina  similar structure when it’s in 2 or more rows and not restricted to the horizontal timeline structu.re 
+
+![image](https://github.com/user-attachments/assets/57b11342-3f63-49e8-a3f3-5e68033ac212)
+![image](https://github.com/user-attachments/assets/5d6ca3fc-f0af-4de6-902b-64057306e37a)
 
 Changed the design of the sidebar in the history detail page so have a changing topic on top and a short line indicating progress. The vertical line was distracting and was providing an unnecessary element on the webpage. This also makes sure the sidebar isn’t constantly changing it’s shape and makes it more accessible for users.
 
+![image](https://github.com/user-attachments/assets/f2f8d58b-03a1-4328-af7e-60d96d2a4748)
+
 Switching the grey background and font color for some images and text  for accessibility issues related to contrast, such as the individual stroke component images. This is to make sure the page is in accordance with WAVE standards.
 
+![image](https://github.com/user-attachments/assets/ac515dbe-e7c0-4d39-9092-cc918b126422)
+
 Removing some distracting elements, such as the rocks in the stroke page, which I found unnecessary to the page. This eliminates unnecessary animation that is not related to the topic and makes the page more accessible to the users
+
+![image](https://github.com/user-attachments/assets/a386832c-e68c-4f2b-a107-fdfa032b95e2)
 
 ## Part 5: Implementation Challenges
 ### Implementing hover effect for irregular svg elements
